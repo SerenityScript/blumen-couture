@@ -1,0 +1,33 @@
+.footer {
+  background-color: #387478;
+  margin-top: 70px;
+  color: #ffffff;
+  font-family: "IBM Plex Serif", serif;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  
+  padding: 50px 20px;
+}
+.logoFooter {
+  width: 110px;
+  height: 110px;
+}
+
+.footer-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+  letter-spacing: 2px;
+}
+
+.FooterSocialIcon {
+  width: 25px;
+  height: 25px;
+  margin: 10px;
+}

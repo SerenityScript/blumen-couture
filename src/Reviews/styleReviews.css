@@ -1,0 +1,85 @@
+.MainCont {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(205, 179, 124, 0.1);
+  width: 100%;
+  margin-top: 70px;
+  position: relative;
+  height: 500px;
+  box-sizing: border-box;
+  padding: 30px 50px;
+}
+
+.ContentCont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.CommentCont {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+
+.ImgComment {
+  width: 300px;
+}
+
+.ImgCont {
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  border-radius: 1000px;
+  margin: 30px;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center; 
+}
+
+button {
+  background-color: transparent;
+  border: none;
+}
+
+.ImgBtn {
+  width: 70px;
+}
+
+.ReviewLineCont {
+  display: flex;
+  position: absolute;
+  bottom: 10%;
+}
+
+.ReviewLine {
+  background-color: rgba(255, 255, 255, 0.9);
+  width: 30px;
+  height: 5px;
+  margin: 0 5px;
+  transition: background-color 0.3s;
+  border-radius: 10px;
+}
+
+.active {
+  background-color: #CDB37C;
+}
+
+/* .InstaImgCont {
+  width: 250px;
+  height: 250px;
+  overflow: hidden;
+  margin: 5px;
+}
+
+.InstaImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center; 
+} */

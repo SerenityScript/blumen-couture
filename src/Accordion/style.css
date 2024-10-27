@@ -1,0 +1,58 @@
+.activeAccordion {
+  padding: 20px;
+  border: 1px solid #CDB37C;
+  cursor: pointer;
+  text-align: center;
+  background-color: rgba(205, 179, 124, 0.1);
+  color: #CDB37C;
+  font-size: 18px;
+  letter-spacing: 1px;
+  font-style: italic;
+  transition: 0.5s;
+  }
+
+  .defaultAccordion {
+  padding: 20px;
+  border: 1px solid #7D7C7C;;
+  cursor: pointer;
+  text-align: center;
+  font-family: "IBM Plex Serif", serif;
+  color: #7D7C7C;
+  letter-spacing: 1px;
+  font-style: italic;
+  }
+
+  .defaultAccordion:hover {
+    background-color: rgba(205, 179, 124, 0.1);
+    color: #CDB37C;
+    transition: 0.3s;
+  }
+
+  .ContentContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(205, 179, 124, 0.03);
+  }
+
+  .AccordionImgCont {
+    width: 260px;
+    height: 250px;
+    margin-right: 50px;
+  }
+  
+  .content {
+  width: 260px;
+  height: 250px;
+  padding: 20px;
+  box-sizing: border-box;
+  font-family: "IBM Plex Serif", serif;
+  font-weight: 300;
+  color: #7D7C7C;
+  letter-spacing: 1px;
+  background-color: rgba(205, 179, 124, 0.1);
+  line-height: 30px;
+  }
+
+  

@@ -1,38 +1,209 @@
 .App {
-  text-align: center;
+  
+  margin: 10px 60px;
+  position: relative;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.logoImg {
+  width: 100px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navElement {
+  color: #ffffff;
+  text-decoration: none;
+  border: 0.5px solid white;
+  padding: 7px 20px;
+  font-size: 12px;
+  font-family: "IBM Plex Serif", serif;
+}
+
+.navElement:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  transition: ease-out 0.5s;
+}
+
+.IntroContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
+  color: #ffffff;
+  margin-bottom: 120px;
+}
+
+.MainHeading {
+  font-family: "IBM Plex Serif", serif;
+  font-weight: 300;
+  font-size: 40px;
+  text-align: center;
+}
+
+.Heading {
+  font-family: "Mea Culpa", cursive;
+  font-size: 40px;
+  font-weight: 200;
+  margin-bottom: 0;
+  letter-spacing: 1px;
+}
+
+.Par {
+  font-family: "IBM Plex Serif", serif;
+  font-style: italic;
+  font-size: 25px;
+  letter-spacing: 1px;
+}
+
+.SlidesContainer {
+  position: absolute;
+  width: 100%;
+  height: 500px;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
 }
 
-.App-link {
-  color: #61dafb;
+.SlideImage {
+  z-index: -1;
+  filter: brightness(50%);
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  position: absolute;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.SlideImage.active {
+  opacity: 1; /* The active slide becomes visible */
+}
+
+.SlideLineCont {
+  position: absolute;
+  display: flex;
+  bottom: 5%;
+}
+
+.SlideLine {
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 30px;
+  height: 5px;
+  margin: 0 5px;
+  transition: background-color 0.3s;
+  border-radius: 10px;
+}
+
+.active {
+  background-color: #CDB37C;
+}
+
+.HeadingCont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.HeadingGold {
+  font-family: "IBM Plex Serif", serif;
+  font-size: 30px;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #CDB37C;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.ParCursive {
+  font-family: "IBM Plex Serif", serif;
+  font-size: 20px;
+  font-weight: 300;
+  font-style: italic;
+  color: #7D7C7C;
+  text-align: center;
+}
+
+.ParStandart {
+  font-size: 16px;
+  font-family: "IBM Plex Serif", serif;
+  font-weight: 300;
+  color: #7D7C7C;
+  text-align: center;
+}
+
+.ParGold {
+  font-family: "IBM Plex Serif", serif;
+  color: #CDB37C;
+  font-weight: 300;
+}
+
+.ImageCont {
+  height: 200px;
+  width: 400px;
+  margin-top: 30px;
+}
+
+.AccordionContainer {
+  width: 100%;
+}
+
+.KontactUsContainer {
+  height: 600px;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("https://images.unsplash.com/photo-1625076019815-b1a5f7e5ef1e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDEwM3x8fGVufDB8fHx8fA%3D%3D");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  margin-top: 50px;
+  padding-top: 90px;
+  color: #ffffff;
+}
+
+.KontaktUsBtn {
+  padding: 8px 30px;
+  border-radius: 4px;
+  border: none;
+  margin-top: 30px;
+  background-color: #ffffff;
+}
+
+.KontaktUsBtnText {
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.InstaFeed {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.InstaImgCont {
+  width: 250px;
+  height: 250px;
+  overflow: hidden;
+  margin: 5px;
+}
+
+.InstaImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center; 
+}
+
+.Awards {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 70px;
+}
+
+.AwardImg {
+  width: 150px;
+  border-radius: 1000px;
+  margin: 0 50px;
 }
