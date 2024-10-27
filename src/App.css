@@ -220,3 +220,17 @@ nav {
   font-weight: 300;
   color: #7D7C7C;
 }
+
+.btnQuotes {
+  cursor: pointer;
+}
+
+.random {
+  width: 40px;
+}
+
+video {
+  width: 600px;
+  border: 1px solid #CDB37C;
+  padding: 15px;
+}

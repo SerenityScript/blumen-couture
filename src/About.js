@@ -3,7 +3,6 @@ import Awards from "./Awards";
 import Intro from "./Intro";
 import { Reviews } from "./Reviews/Reviews";
 import Slides from "./Slides";
-import "./styleAbout.css";
 import video from "./flowers.mp4";
 import random from "./dice.png";
 
@@ -37,14 +36,11 @@ const About = () => {
 
       <div className="HeadingCont">
         <p className='ParCursive'>"{quotes.quote}"</p>
-        
-          <p className='ParStandart'> {quotes.author} </p>
-        
+        <p className='ParStandart'> {quotes.author} </p>
         <button className='btnQuotes' onClick={fetchQuotes}>
           <img src={random} className='random' alt='Random Quote' />
         </button>
       </div>
-
 
       <div className="HeadingCont">
         <h3 className='HeadingGold'>Über uns</h3>
@@ -52,14 +48,17 @@ const About = () => {
         <p className='ParStandart'>Blumen Couture befindet sich im Herzen Hamburgs und ist mehr als nur ein Blumengeschäft – es ist ein Atelier für exklusive Eventdekoration und florales Design. Die Mission von Blumen Couture ist es, jedem Event eine unverwechselbare Eleganz und eine luxuriöse Atmosphäre zu verleihen, die noch lange im Gedächtnis bleibt. Durch eine perfekte Symbiose aus Kreativität und Handwerkskunst entstehen außergewöhnliche Arrangements, die Geschichten erzählen und Emotionen wecken.</p>
         <p className='ParStandart'>In der Arbeitsweise steht die enge Zusammenarbeit mit Kunden im Vordergrund. Vom ersten Beratungsgespräch bis zur Umsetzung wird jeder Schritt mit Liebe zum Detail geplant, um die individuellen Vorstellungen in ein einzigartiges Konzept zu übersetzen. Jedes Arrangement und jede Dekoration sind dabei maßgeschneidert und sorgfältig auf das Ambiente und Thema des Events abgestimmt. Nachhaltigkeit und hochwertige Materialien sind ebenso Teil der Philosophie von Blumen Couture, wodurch jeder Auftrag zu einem harmonischen Gesamterlebnis wird.</p>
       </div>
+
       <div className="HeadingCont">
         <video autoPlay muted loop>
           <source src={video} type="video/mp4" />
         </video>
       </div>
+
       <div className="HeadingCont">
         <p className='ParStandart'>Blumen Couture bietet eine schnelle und zuverlässige Lieferung von Blumensträußen an, damit jeder Moment perfekt untermalt werden kann. Ob für spontane Überraschungen, last-minute Geschenke oder kurzfristige Events – mit unserem Express-Service sorgen wir dafür, dass jede Bestellung frisch und pünktlich ankommt. Jedes Arrangement wird unmittelbar vor der Auslieferung handgefertigt und sicher verpackt, um höchste Frische und Qualität zu garantieren. So können Sie sich darauf verlassen, dass jeder Strauß genau im richtigen Moment seine Wirkung entfaltet und Ihre Botschaft stilvoll übermittelt.</p>
       </div>
+
       <div className="HeadingCont">
         <p className="ParStandart">Folgen Sie uns auf</p>
         <h3 className="HeadingGold">INSTAGRAM</h3>
@@ -87,9 +86,11 @@ const About = () => {
         </div>
         <p className="ParGold">@blumen_couture</p>
       </div>
+
       <div className="HeadingCont">
         <Reviews />
       </div>
+      
       <div className="HeadingCont">
         <Awards />
       </div>
