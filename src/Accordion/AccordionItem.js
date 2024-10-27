@@ -19,7 +19,9 @@ export const AccordionItem = ({ title, content, image }) => {
             <div className="AccordionImgCont">
               <img src={image} alt="Description" className="AccordionImg"/>
             </div>
-            <div className="content">{content}</div>
+            <div className="AccordionContentCont">
+              <div className="content">{content}</div>
+            </div>
 
           </div>
         )

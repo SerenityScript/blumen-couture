@@ -30,7 +30,7 @@
 
   .ContentContainer {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     padding: 20px;
     background-color: rgba(205, 179, 124, 0.03);
@@ -39,20 +39,29 @@
   .AccordionImgCont {
     width: 260px;
     height: 250px;
-    margin-right: 50px;
+  }
+
+  .AccordionImg {
+    box-sizing: border-box;
+    border: 1px solid #CDB37C;
+    padding: 10px;
+  }
+
+  .AccordionContentCont {
+    width: 260px;
+    height: 250px;
+    box-sizing: border-box;
+    border: 1px solid #CDB37C;
+    padding: 10px;
   }
   
   .content {
-  width: 260px;
-  height: 250px;
-  padding: 20px;
-  box-sizing: border-box;
-  font-family: "IBM Plex Serif", serif;
-  font-weight: 300;
-  color: #7D7C7C;
-  letter-spacing: 1px;
-  background-color: rgba(205, 179, 124, 0.1);
-  line-height: 30px;
+    padding: 10px;
+    font-family: "IBM Plex Serif", serif;
+    font-weight: 300;
+    color: #7D7C7C;
+    letter-spacing: 1px;
+    background-color: rgba(205, 179, 124, 0.1);
+    line-height: 30px;
+    border: 1px solid #CDB37C;
   }
-
-  
