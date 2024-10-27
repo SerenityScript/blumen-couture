@@ -21,16 +21,16 @@ function App() {
         <nav>
           <img src={logo} className='logoImg' alt='My Logo' />
           <Link to="/" className='navElement'>Home</Link>
-          <Link to="/eventDecoration" className='navElement'>Event Decoration</Link>
           <Link to="/shop" className='navElement'>Shop</Link>
-          <Link to="/about" className='navElement'>About</Link>
-          <Link to="/contact" className='navElement'>Contact</Link>
+          <Link to="/eventDecoration" className='navElement'>Event Dekoration</Link>
+          <Link to="/about" className='navElement'>Über uns</Link>
+          <Link to="/contact" className='navElement'>Kontakt</Link>
         </nav>
 
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/eventDecoration" element={<EventDecoration />} />
           <Route path="/shop" element={<Shop />} />
+          <Route path="/eventDecoration" element={<EventDecoration />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>

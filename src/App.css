@@ -207,3 +207,17 @@ nav {
   border-radius: 1000px;
   margin: 0 50px;
 }
+
+.EventImg {
+  width: 600px;
+  border: 1px solid #CDB37C;
+  padding: 15px;
+}
+
+.ParEvent {
+  width: 600px;
+  font-size: 16px;
+  font-family: "IBM Plex Serif", serif;
+  font-weight: 300;
+  color: #7D7C7C;
+}

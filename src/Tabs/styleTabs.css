@@ -1,0 +1,30 @@
+.btn_tabs {
+  font-family: "Mea Culpa", cursive;
+  color: #7D7C7C;
+  font-size: 30px;
+  font-weight: 200;
+  margin-bottom: 0;
+  letter-spacing: 1px;
+  margin: 10px;
+  padding: 5px 20px;
+  border: 1px solid #CDB37C;
+  border-radius: 5px;
+  cursor: pointer;
+  
+}
+
+.btn_tabs:hover {
+  background-color: rgba(205, 179, 124, 0.1);
+}
+
+.TabsCont {
+  display: flex;
+}
+
+.TabImgCont {
+  width: 300px;
+  height: 300px;
+  margin: 10px;
+  padding: 15px;
+  border: 1px solid #CDB37C;
+}

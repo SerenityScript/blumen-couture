@@ -5,7 +5,7 @@ import { Reviews } from "./Reviews/Reviews";
 import Slides from "./Slides";
 import { Link } from 'react-router-dom';
 
-const Home = ({ heading, mainHeading, par }) => {
+const Home = () => {
   const images = [
     "https://images.unsplash.com/photo-1625076019815-b1a5f7e5ef1e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDYxfHx8ZW58MHx8fHx8",
     "https://images.unsplash.com/photo-1474822189311-11c44f2aa6d1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDMxfHx8ZW58MHx8fHx8",
@@ -40,7 +40,7 @@ const Home = ({ heading, mainHeading, par }) => {
         <h2 className="MainHeading">Möchten Sie Ihren Traum wahr werden lassen? </h2>
         <p className="Par">Kontaktieren Sie uns und wir erfüllen es</p>
         <button className="KontaktUsBtn">
-          <Link className="ParGold KontaktUsBtnText" to="/about">KONTAKT</Link>
+        <Link className="ParGold KontaktUsBtnText" to="/contact">KONTAKT</Link>
         </button>
       </div>
       <div className="HeadingCont">
