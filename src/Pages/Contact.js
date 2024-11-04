@@ -1,7 +1,7 @@
 import React from 'react';
-import Intro from "./Intro";
-import Slides from "./Slides";
-import ContactForm from './ContactForm';
+import Intro from "../Components/Intro/Intro";
+import Slides from "../Components/Slides";
+import ContactForm from '../Components/ContactForm/ContactForm';
 
 
 const Contact = () => {

@@ -6,13 +6,14 @@ import {
   Link
 } from "react-router-dom";
 import './App.css';
-import Home from './Home';
-import EventDecoration from './EventDecoration';
-import Shop from './Shop';
-import About from './About';
-import Contact from './Contact';
+import Home from './Pages/Home';
+import EventDecoration from './Pages/EventDecoration';
+import Shop from './Pages/Shop/Shop';
+import About from './Pages/About';
+import Contact from './Pages/Contact';
 import logo from './logo.png';
-import Footer from './Footer';
+import Footer from './Components/Footer/Footer';
+import AboutProducts from './Pages/Shop/AboutProducts';
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
           <Route path="/eventDecoration" element={<EventDecoration />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/about/:title" element={<AboutProducts />} />
         </Routes>
       </Router>
 

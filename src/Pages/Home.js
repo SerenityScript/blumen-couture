@@ -1,8 +1,8 @@
-import { Accordion } from "./Accordion/Accordion";
-import Awards from "./Awards";
-import Intro from "./Intro";
-import { Reviews } from "./Reviews/Reviews";
-import Slides from "./Slides";
+import { Accordion } from "../Components/Accordion/Accordion";
+import Awards from "../Components/Awards/Awards";
+import Intro from "../Components/Intro/Intro";
+import { Reviews } from "../Components/Reviews/Reviews";
+import Slides from "../Components/Slides";
 import { Link } from 'react-router-dom';
 
 const Home = () => {

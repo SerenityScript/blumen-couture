@@ -1,0 +1,85 @@
+.IconsMainCont {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.IconCont {
+  flex: 1;
+  border: 2px solid #CDB37C;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.IconShop {
+  width: 50px;
+  height: 50px;
+}
+
+.cont {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  
+}
+
+.change {
+  background-color: #CDB37C;
+  color: #ffffff;
+  padding: 10px;
+  border: 2px solid #CDB37C;
+  border-radius: 20px;
+  font-family: "IBM Plex Serif", serif;
+  cursor: pointer;
+  width: 150px;
+}
+
+.change:hover {
+  background-color: rgba(205, 179, 124, 0.1);
+    color: #CDB37C;
+    transition: 0.3s;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.product-card {
+  padding: 2%;
+  
+}
+
+.ProductImg {
+  width: 300px;
+  height: 300px;
+}
+
+.aboutProducts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.AboutProductsImg {
+  width: 400px;
+}
+
+.btn {
+  background-color: #f4eddd; 
+  padding: 20px;
+  font-family: "IBM Plex Serif", serif;
+}
+
+h3, h4 {
+  font-family: "IBM Plex Serif", serif;
+}
+
+button {
+  margin: 10px;
+}

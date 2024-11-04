@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react';
-import Awards from "./Awards";
-import Intro from "./Intro";
-import { Reviews } from "./Reviews/Reviews";
-import Slides from "./Slides";
+import Awards from "../Components/Awards/Awards";
+import Intro from "../Components/Intro/Intro";
+import { Reviews } from "../Components/Reviews/Reviews";
+import Slides from "../Components/Slides";
 import video from "./flowers.mp4";
 import random from "./dice.png";
 

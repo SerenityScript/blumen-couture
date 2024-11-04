@@ -15,7 +15,7 @@ function ContactForm() {
       <h3 className="HeadingGold">Schreiben Sie uns</h3>
 
     <form onSubmit={handleSubmit} className="form">
-    <div class="group">
+    <div className="group">
       <label htmlFor="email">
         Email Address
       </label>

@@ -1,11 +1,11 @@
 import { useState } from "react";
-import Intro from "./Intro";
-import Slides from "./Slides";
+import Intro from "../Components/Intro/Intro";
+import Slides from "../Components/Slides";
 import { listEvents } from "./listEvents";
-import Tabs from "./Tabs/Tabs";
-import TabInfoOne from "./Tabs/TabInfoOne";
-import TabInfoTwo from "./Tabs/TabInfoTwo";
-import TabInfoThree from "./Tabs/TabInfoThree";
+import Tabs from "../Components/Tabs/Tabs";
+import TabInfoOne from "../Components/Tabs/TabInfoOne";
+import TabInfoTwo from "../Components/Tabs/TabInfoTwo";
+import TabInfoThree from "../Components/Tabs/TabInfoThree";
 import { Link } from 'react-router-dom';
 
 const EventDecoration = () => {

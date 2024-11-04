@@ -1,6 +1,6 @@
 import React from "react";
 import "./Footer.css";
-import logo from "./logo.png";
+import logo from "../../logo.png";
 import envelope from "./envelope.png";
 import insta from "./instagram.png";
 
