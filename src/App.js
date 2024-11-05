@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react';
 import React from 'react';
 import {
   BrowserRouter as Router,
@@ -14,10 +15,19 @@ import Contact from './Pages/Contact';
 import logo from './logo.png';
 import Footer from './Components/Footer/Footer';
 import AboutProducts from './Pages/Shop/AboutProducts';
+import { LoaderPage } from './Components/Loader/LoaderPage';
 
 function App() {
+
+  const [stateLoader, setStateLoader] = useState(true);
+  useEffect(() => {
+    const timer = setTimeout(() => setStateLoader(false), 3000);
+    return () => clearTimeout(timer)
+  }, [])
+
   return (
     <div className='App'>
+      {stateLoader && <LoaderPage />}
       <Router>
         <nav>
           <img src={logo} className='logoImg' alt='My Logo' />
