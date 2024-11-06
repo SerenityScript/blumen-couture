@@ -9,9 +9,11 @@ const Cart = ({ cart, setCart }) => {
   
   return (
     <div>
+      <hr className="hrLine"/>
       <div>
-        <h2>Cart: {cart.length} Artikel</h2>
+        <h2 className="CartHeading">Cart: {cart.length} Artikel</h2>
       </div>
+      
       <div>
       {cart.map((item => {
         const { id, name, price, image } = item;

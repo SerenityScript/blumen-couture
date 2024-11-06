@@ -29,9 +29,9 @@ function Flowers({ flowers }) {
               <img src={image} className="ProductImg" alt="Flowers" />
             </Link>
             <div className="product-info">
-              <h3>{name}</h3>
-              <h4>$ {price}</h4>
-              <button className="btn" onClick={() => addToCart(id)}>Add to cart</button>
+              <p className="ProductName">{name}</p>
+              <p className="ProductPrice">$ {price}</p>
+              <button className="btnHinzufügen" onClick={() => addToCart(id)}>In den Warenkorb</button>
             </div>
           </div>
         )

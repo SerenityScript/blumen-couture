@@ -2,6 +2,7 @@
   width: 100%;
   display: flex;
   flex-wrap: wrap;
+  color: #7D7C7C;
 }
 
 .IconCont {
@@ -36,12 +37,13 @@
   font-family: "IBM Plex Serif", serif;
   cursor: pointer;
   width: 150px;
+  transition: 0.4s;
 }
 
 .change:hover {
   background-color: rgba(205, 179, 124, 0.1);
-    color: #CDB37C;
-    transition: 0.3s;
+  color: #CDB37C;
+  
 }
 
 .products {
@@ -52,12 +54,20 @@
 
 .product-card {
   padding: 2%;
-  
+  margin: 1%;
+  border: 1px solid #CDB37C;
+}
+
+.product-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #CDB37C;
 }
 
 .ProductImg {
-  width: 300px;
-  height: 300px;
+  width: 200px;
+  height: 200px;
 }
 
 .aboutProducts {
@@ -70,16 +80,38 @@
   width: 400px;
 }
 
-.btn {
-  background-color: #f4eddd; 
-  padding: 20px;
+.btnHinzufügen {
+  border: 1px solid #CDB37C;
+  border-radius: 20px;
+  color: #CDB37C;
+  padding: 8px;
   font-family: "IBM Plex Serif", serif;
-}
-
-h3, h4 {
-  font-family: "IBM Plex Serif", serif;
-}
-
-button {
+  transition: .4s;
   margin: 10px;
+}
+
+.btnHinzufügen:hover {
+  background-color: #CDB37C;
+  color: #ffffff;
+  
+  border-radius: 20px;
+
+}
+
+.ProductName, .ProductPrice {
+  font-family: "IBM Plex Serif", serif;
+  font-size: 14px;
+  margin: 0;
+  color: #7D7C7C;
+}
+
+.CartHeading {
+  text-align: center;
+  font-family: "IBM Plex Serif", serif;
+  color: #CDB37C;
+  font-weight: 400;
+}
+
+.hrLine {
+  border: 1px solid #CDB37C;
 }
