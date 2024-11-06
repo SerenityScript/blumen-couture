@@ -5,6 +5,7 @@ import Cart from "./Cart";
 
 function Flowers({ flowers }) {
   const [cart, setCart] = useState([]);
+  const [clickedItems, setClickedItems] = useState([]);
 
   const addToCart = (id) => {
     // Find the selected flower by ID
@@ -14,7 +15,10 @@ function Flowers({ flowers }) {
     if (!cart.some((item) => item.id === id)) {
       // Use the spread operator to add the new item to the cart
       setCart([...cart, cartAdded]);
+      setClickedItems((prevClicked) => [...prevClicked, id]);
     }
+
+    
   };
 
 
@@ -31,7 +35,9 @@ function Flowers({ flowers }) {
             <div className="product-info">
               <p className="ProductName">{name}</p>
               <p className="ProductPrice">$ {price}</p>
-              <button className="btnHinzufügen" onClick={() => addToCart(id)}>In den Warenkorb</button>
+              <button className="btnHinzufügen" onClick={() => addToCart(id)}>
+                {clickedItems.includes(id) ? 'Hinzugefügt' : 'In den Warenkorb'}
+              </button>
             </div>
           </div>
         )

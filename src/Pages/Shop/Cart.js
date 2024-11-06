@@ -18,11 +18,11 @@ const Cart = ({ cart, setCart }) => {
       {cart.map((item => {
         const { id, name, price, image } = item;
         return (
-          <div className="product-card" key={id}>
+          <div className="CartItem" key={id}>
             <Link to={`/about/${item.title}`}>
               <img src={image} className="ProductImg" alt="Flowers" />
             </Link>
-            <div className="product-info">
+            <div className="CartItem-info">
               <h3>{name}</h3>
               <h4>$ {price}</h4>
               <button on onClick={() => removeItem(id)}>Remove</button>
