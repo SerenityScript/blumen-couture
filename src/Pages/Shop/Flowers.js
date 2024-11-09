@@ -1,11 +1,16 @@
 import { Link } from "react-router-dom";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Cart from "./Cart";
 
 
 function Flowers({ flowers }) {
-  const [cart, setCart] = useState([]);
+  const [cart, setCart] = useState(
+    localStorage.cart ? JSON.parse(localStorage.cart) : []);
   const [clickedItems, setClickedItems] = useState([]);
+
+  useEffect(() => {
+    localStorage.setItem("cart", JSON.stringify(cart))
+  }, [cart])
 
   const addToCart = (id) => {
     // Find the selected flower by ID
@@ -17,9 +22,9 @@ function Flowers({ flowers }) {
       setCart([...cart, cartAdded]);
       setClickedItems((prevClicked) => [...prevClicked, id]);
     }
-
-    
   };
+
+  
 
 
   return (
