@@ -94,9 +94,7 @@
 .btnHinzufügen:hover {
   background-color: #CDB37C;
   color: #ffffff;
-  
   border-radius: 20px;
-
 }
 
 .ProductName, .ProductPrice {
@@ -106,18 +104,42 @@
   color: #7D7C7C;
 }
 
-.CartHeading {
-  text-align: center;
-  font-family: "IBM Plex Serif", serif;
-  color: #CDB37C;
-  font-weight: 400;
-  font-size: 20px;
-  margin: 0;
+.ShoppingCartCont {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  border-radius: 50%;
+  opacity: 0;
+  transition: opacity 2s ease-in-out;
 }
 
-.hrLine {
-  border: 1px solid #CDB37C;
+.ShoppingCartCont.visible {
+  opacity: 1;
 }
+
+
+.ShoppingCartBtn {
+  position: relative;
+  cursor: pointer;
+
+}
+
+.ShoppingCartImg {
+  width: 50px;
+}
+
+.ShoppingCartNumber {
+  position: absolute;
+  top: -25px;
+  right: 0;
+  font-size: 17px;
+  background-color: #ffffff;
+  border: 1px solid #CDB37C;
+  border-radius: 10000px;
+  padding: 5px;
+  color: red;
+}
+
 
 .modal-overlay {
   position: fixed;
@@ -138,6 +160,7 @@
   border-radius: 8px;
   width: 400px;
   max-width: 80%;
+  min-height: 80vh;
   max-height: 80vh;
   overflow-y: auto;
   position: relative;
@@ -145,10 +168,41 @@
 
 .close-button {
   position: absolute;
-  top: 10px;
+  top: 25px;
   right: 10px;
   background: transparent;
   border: none;
   width: 30px;
   cursor: pointer;
+}
+
+.CartHeading {
+  font-family: "IBM Plex Serif", serif;
+  color: #CDB37C;
+  font-weight: 400;
+  font-size: 20px;
+  margin: 0;
+}
+
+.hrLine {
+  border: 1px solid #CDB37C;
+}
+
+.CartItem {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 5px;
+}
+
+.CartProductImg {
+  width: 80px;
+  height: 80px;
+  
+}
+
+.CartItem-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

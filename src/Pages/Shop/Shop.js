@@ -28,7 +28,7 @@ const Shop = () => {
   
 
   return (
-    <div>
+    <div className="ShopMainContainer">
       <Slides images={images}/>
       <Intro
         heading="Blumen Couture"
@@ -36,10 +36,8 @@ const Shop = () => {
         par="Wo Blumen zu Kunstwerken werden."
       />
 
-
-    <div>
-      <div className='cont'>
-          
+      <div>
+        <div className='cont'>
           <div className="IconsMainCont">
             <div className="IconCont">
               <img src={leaf} className="IconShop" alt="Leaf" />
@@ -58,13 +56,10 @@ const Shop = () => {
               <p>Zertifizierte Produkte</p>
             </div>
           </div>
+        </div>
+        <Buttons filteredFlowers={chosenFlowers} setFlowers={setFlowers}  />
+        <Flowers flowers={flowers} />
       </div>
-      <Buttons filteredFlowers={chosenFlowers} setFlowers={setFlowers}  />
-      <Flowers flowers={flowers} />
-      
-    </div>
-      
-
     </div>
   )
 }

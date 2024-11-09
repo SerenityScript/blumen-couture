@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import Cart from "./Cart";
 import Modal from "./Modal";
+import shoppingCart from "./shoppingCart.png";
 
 
 function Flowers({ flowers }) {
@@ -9,6 +10,25 @@ function Flowers({ flowers }) {
     localStorage.cart ? JSON.parse(localStorage.cart) : []);
   const [clickedItems, setClickedItems] = useState([]);
   const [isCartOpen, setIsCartOpen] = useState(false);
+  const [isVisible, setIsVisible] = useState(false);
+
+  const handleScroll = () => {
+    if (window.scrollY > 200) {
+      setIsVisible(true); // Zeige den Button, wenn mehr als 200px gescrollt wurde
+    } else {
+      setIsVisible(false); // Verstecke den Button, wenn weniger als 200px gescrollt wurde
+    }
+  };
+
+  useEffect(() => {
+    // Füge den Scroll-Event-Listener hinzu, wenn die Komponente gemountet wird
+    window.addEventListener("scroll", handleScroll);
+
+    // Entferne den Event-Listener, wenn die Komponente unmontiert wird
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   useEffect(() => {
     localStorage.setItem("cart", JSON.stringify(cart))
@@ -25,10 +45,12 @@ function Flowers({ flowers }) {
 
   const openCart = () => {
     setIsCartOpen(true);
+    document.body.style.overflow = "hidden";
   };
 
   const closeCart = () => {
     setIsCartOpen(false);
+    document.body.style.overflow = "auto";
   };
 
   return (
@@ -53,9 +75,13 @@ function Flowers({ flowers }) {
         }))}
       </div>
 
-      <button onClick={openCart}>CART {cart.length}</button>
+      {isVisible && ( <div className={`ShoppingCartCont ${isVisible ? "visible" : ""}`}>
+        <button onClick={openCart} className="ShoppingCartBtn">
+          <img src={shoppingCart} className="ShoppingCartImg"  alt="Shopping Cart" />
+          <p className="ShoppingCartNumber">{cart.length}</p>
+        </button>
+      </div>)}
 
-      {/* Modal Component */}
       <Modal isOpen={isCartOpen} onClose={closeCart}>
         <Cart cart={cart} setCart={setCart} />
       </Modal>

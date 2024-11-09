@@ -16,11 +16,11 @@ const Cart = ({ cart, setCart }) => {
         const { id, name, price, image } = item;
         return (
           <div className="CartItem" key={id}>
-            <img src={image} className="ProductImg" alt="Flowers" />
+            <img src={image} className="CartProductImg" alt="Flowers" />
             <div className="CartItem-info">
-              <h3>{name}</h3>
-              <h4>$ {price}</h4>
-              <button on onClick={() => removeItem(id)}>Remove</button>
+              <p className="ProductName">{name}</p>
+              <p className="ProductName">$ {price}</p>
+              <button on onClick={() => removeItem(id)}>X</button>
             </div>
           </div>
         )
