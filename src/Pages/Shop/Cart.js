@@ -1,5 +1,3 @@
-import { Link } from "react-router-dom";
-
 const Cart = ({ cart, setCart }) => {
 
   const removeItem = (id) => {
@@ -9,19 +7,16 @@ const Cart = ({ cart, setCart }) => {
   
   return (
     <div>
-      <hr className="hrLine"/>
       <div>
-        <h2 className="CartHeading">Cart: {cart.length} Artikel</h2>
+        <h2 className="CartHeading">{cart.length} Artikel</h2>
       </div>
-      
+      <hr className="hrLine"/>
       <div>
       {cart.map((item => {
         const { id, name, price, image } = item;
         return (
           <div className="CartItem" key={id}>
-            <Link to={`/about/${item.title}`}>
-              <img src={image} className="ProductImg" alt="Flowers" />
-            </Link>
+            <img src={image} className="ProductImg" alt="Flowers" />
             <div className="CartItem-info">
               <h3>{name}</h3>
               <h4>$ {price}</h4>

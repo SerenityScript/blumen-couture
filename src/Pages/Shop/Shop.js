@@ -1,4 +1,3 @@
-
 import Intro from "../../Components/Intro/Intro";
 import Slides from "../../Components/Slides";
 import { useState } from 'react';
@@ -9,7 +8,7 @@ import './styleShop.css';
 import leaf from "./leaf.png";
 import gift from "./gift.png";
 import shuttle from "./shuttle.png";
-
+import certificate from "./certificate.png";
 
 
 const Shop = () => {
@@ -25,6 +24,8 @@ const Shop = () => {
     const newFlowers = shopList.filter(element => element.searchTerm === searchTerm);
     setFlowers(newFlowers);
   }
+
+  
 
   return (
     <div>
@@ -53,13 +54,14 @@ const Shop = () => {
               <p>Schnelle Lieferung</p>
             </div>
             <div className="IconCont">
-              <img src={leaf} className="IconShop" alt="Certificate" />
+              <img src={certificate} className="IconShop" alt="Certificate" />
               <p>Zertifizierte Produkte</p>
             </div>
           </div>
       </div>
       <Buttons filteredFlowers={chosenFlowers} setFlowers={setFlowers}  />
       <Flowers flowers={flowers} />
+      
     </div>
       
 
