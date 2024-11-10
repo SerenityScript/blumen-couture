@@ -5,11 +5,11 @@ function Buttons({ filteredFlowers, setFlowers }) {
   return (
     <div className="cont">
       <button className="change" onClick={() => setFlowers(shopList)}>All</button>
-      <button className="change" onClick={() => filteredFlowers("dress")}>Blumensträuße</button>
-      <button className="change" onClick={() => filteredFlowers("skirt")}>Vasen</button>
-      <button className="change" onClick={() => filteredFlowers("pants")}>Kerzen</button>
-      <button className="change" onClick={() => filteredFlowers("shoes")}>Zimmer Pflanzen</button>
-      <button className="change" onClick={() => filteredFlowers("shirt")}>Geschenke</button>
+      <button className="change" onClick={() => filteredFlowers("blumenstrauß")}>Blumensträuße</button>
+      <button className="change" onClick={() => filteredFlowers("vase")}>Vasen</button>
+      <button className="change" onClick={() => filteredFlowers("kerze")}>Kerzen</button>
+      <button className="change" onClick={() => filteredFlowers("zimmerPflanze")}>Zimmerpflanzen</button>
+      <button className="change" onClick={() => filteredFlowers("geschenk")}>Geschenke</button>
     </div>
   )
 }

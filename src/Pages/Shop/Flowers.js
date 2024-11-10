@@ -69,7 +69,7 @@ function Flowers({ flowers }) {
               </Link>
               <div className="product-info">
                 <p className="ProductName">{name}</p>
-                <p className="ProductPrice">$ {price}</p>
+                <p className="ProductPrice">€ {price}</p>
                 <button className="btnHinzufügen" onClick={() => addToCart(id)}>
                   {clickedItems.includes(id) ? 'Hinzugefügt' : 'In den Warenkorb'}
                 </button>
