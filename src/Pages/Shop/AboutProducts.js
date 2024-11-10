@@ -25,12 +25,16 @@ function AboutProducts() {
       {shopList.filter((item) => item.title === title).map((elem, index) => {
         return (
           <div className="aboutProducts" key={index}>
-            <h3>{elem.name}</h3>
-            <h3>{elem.title}</h3>
             <img src={elem.image} alt="product" className="AboutProductsImg" />
-            <button className="btn" onClick={() => navigate(-1)}>
-              Go back
-            </button>
+            <div className="aboutProductsContentCont">
+              <p className="typeAboutProducts">{elem.searchTerm}</p>
+              <h3 className="headingAboutProducts">{elem.name}</h3>
+              <p className="parAboutProducts">{elem.title}</p>
+              <p className="parAboutProducts">€ {elem.price}</p>
+              <button className="btnAboutProducts" onClick={() => navigate(-1)}>
+                Zurück
+              </button>
+            </div>
           </div>
         )
       })}

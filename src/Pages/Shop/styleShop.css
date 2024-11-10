@@ -143,7 +143,6 @@
   opacity: 1;
 }
 
-
 .ShoppingCartBtn {
   position: relative;
   cursor: pointer;
@@ -288,4 +287,57 @@
 .PayIcon {
   width: 30px;
   
+}
+
+.aboutProducts {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+}
+
+.AboutProductsImg {
+  width: 400px;
+  margin-top: 30px;
+  border-radius: 20px;
+}
+
+.aboutProductsContentCont {
+  width: 400px;
+}
+
+.typeAboutProducts {
+  font-family: "IBM Plex Serif", serif;
+  color: #CDB37C;
+  text-transform: uppercase;
+}
+
+.headingAboutProducts {
+  font-family: "Mea Culpa", cursive;
+  color: #CDB37C;
+  font-weight: 100;
+  font-size: 48px;
+  
+}
+
+.parAboutProducts {
+  font-family: "IBM Plex Serif", serif;
+  font-size: 18px;
+  color: #7D7C7C;
+}
+
+.btnAboutProducts {
+  font-family: "IBM Plex Serif", serif;
+  color: #CDB37C;
+  border: 1px solid #CDB37C;
+  cursor: pointer;
+  padding: 10px 30px;
+  border-radius: 10px;
+  margin-top: 20px;
+  transition: .4s;
+}
+
+.btnAboutProducts:hover {
+  background-color: rgba(205, 179, 124, 0.1);
 }

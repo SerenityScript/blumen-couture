@@ -45,7 +45,7 @@ const Cart = ({ cart, setCart }) => {
               <img src={image} className="CartProductImg" alt="Flowers" />
               <div className="CartItem-info">
                 <p className="ProductName">{name}</p>
-                <p className="ProductPrice">€ {price}</p>
+                <p className="ProductPrice">€ {price * (item.amount || 1)}</p>
                 <Amount 
                   amount={amount} 
                   setAmount={(newAmount) => updateAmount(id, newAmount)} 

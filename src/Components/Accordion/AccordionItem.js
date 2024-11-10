@@ -17,7 +17,7 @@ export const AccordionItem = ({ title, content, image }) => {
         isOpen && (
           <div className="ContentContainer">
             <div className="AccordionImgCont">
-              <img src={image} alt="Description" className="AccordionImg"/>
+              <img src={image} alt="Description"/>
             </div>
             <div className="AccordionContentCont">
               <div className="content">{content}</div>
