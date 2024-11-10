@@ -13,18 +13,16 @@ function Flowers({ flowers }) {
   const [isVisible, setIsVisible] = useState(false);
 
   const handleScroll = () => {
-    if (window.scrollY > 200) {
-      setIsVisible(true); // Zeige den Button, wenn mehr als 200px gescrollt wurde
+    if (window.scrollY > 500) {
+      setIsVisible(true);
     } else {
-      setIsVisible(false); // Verstecke den Button, wenn weniger als 200px gescrollt wurde
+      setIsVisible(false);
     }
   };
 
   useEffect(() => {
-    // Füge den Scroll-Event-Listener hinzu, wenn die Komponente gemountet wird
     window.addEventListener("scroll", handleScroll);
 
-    // Entferne den Event-Listener, wenn die Komponente unmontiert wird
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
@@ -37,7 +35,6 @@ function Flowers({ flowers }) {
   const addToCart = (id) => {
     const cartAdded = flowers.find((flower) => flower.id === id);
     if (!cart.some((item) => item.id === id)) {
-      // Use the spread operator to add the new item to the cart
       setCart([...cart, cartAdded]);
       setClickedItems((prevClicked) => [...prevClicked, id]);
     }
@@ -53,8 +50,15 @@ function Flowers({ flowers }) {
     document.body.style.overflow = "auto";
   };
 
+  const totalItems = cart.reduce((sum, item) => sum + (item.amount || 1), 0);
+
   return (
     <div>
+      <div className="FirstShoppingCartCont">
+        <button onClick={openCart} className="FirstShoppingCartBtn">
+          <p className="FirstShoppingCartPar">Warenkorb: {totalItems}</p>
+        </button>
+      </div>
       <div className="products">
         {flowers.map((item => {
           const { id, name, price, image } = item;
@@ -78,7 +82,7 @@ function Flowers({ flowers }) {
       {isVisible && ( <div className={`ShoppingCartCont ${isVisible ? "visible" : ""}`}>
         <button onClick={openCart} className="ShoppingCartBtn">
           <img src={shoppingCart} className="ShoppingCartImg"  alt="Shopping Cart" />
-          <p className="ShoppingCartNumber">{cart.length}</p>
+          <p className="ShoppingCartNumber">{totalItems}</p>
         </button>
       </div>)}
 

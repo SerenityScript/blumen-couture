@@ -43,8 +43,34 @@
 
 .change:hover {
   background-color: rgba(205, 179, 124, 0.1);
-  color: #CDB37C;
+  background-color: #b59763;
   
+}
+
+.FirstShoppingCartCont {
+  display: flex;
+  justify-content: center;
+}
+
+.FirstShoppingCartBtn {
+  cursor: pointer;
+  border: 1px solid #CDB37C;
+  border-radius: 30px;
+  width: 40%;
+  transition: .4s;
+}
+
+.FirstShoppingCartBtn:hover {
+  background-color: rgba(205, 179, 124, 0.1);
+  color: #ffffff;
+}
+
+.FirstShoppingCartPar {
+  font-family: "IBM Plex Serif", serif;
+  color: #CDB37C;
+  letter-spacing: 2px;
+  font-size: 18px;
+
 }
 
 .products {
@@ -121,7 +147,6 @@
 .ShoppingCartBtn {
   position: relative;
   cursor: pointer;
-
 }
 
 .ShoppingCartImg {
@@ -184,6 +209,11 @@
   margin: 0;
 }
 
+.CartTotalPrice {
+  font-family: "IBM Plex Serif", serif;
+  color: #7D7C7C;
+}
+
 .hrLine {
   border: 1px solid #CDB37C;
 }
@@ -196,13 +226,56 @@
 }
 
 .CartProductImg {
-  width: 80px;
-  height: 80px;
-  
+  width: 120px;
+  height: 120px;
+  border: 1px solid #CDB37C;
+  padding: 5px;
 }
 
 .CartItem-info {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.AmountCont {
+  display: flex;
+  align-items: center;
+  font-family: "IBM Plex Serif", serif;
+  font-size: 14px;
+  color: #7D7C7C;
+  gap: 10px; /* Abstand zwischen den Buttons und der Zahl */
+}
+
+.AmountBtn {
+  background-color: #CDB37C;
+  color: #ffffff;
+  cursor: pointer;
+  width: 30px;  /* Etwas größere Buttons für bessere Benutzerfreundlichkeit */
+  height: 30px;
+  border: none;
+  border-radius: 5px;  /* Abgerundete Ecken für die Buttons */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.AmountBtn:hover {
+  background-color: #b59763;  /* Ein dunklerer Farbton bei Hover */
+}
+
+.AmountNumber {
+  border: 1px solid #CDB37C;
+  width: 30px; /* Gleiche Breite wie die Buttons */
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;  /* Abgerundete Ecken */
+  font-size: 14px;
+}
+
+.TraschIcon {
+  width: 20px;
+  height: 20px;
 }
