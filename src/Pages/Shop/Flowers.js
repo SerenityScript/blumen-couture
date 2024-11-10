@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import Cart from "./Cart";
 import Modal from "./Modal";
-import shoppingCart from "./shoppingCart.png";
+import shoppingCart from "./AssetsShop/shoppingCart.png";
 
 
 function Flowers({ flowers }) {

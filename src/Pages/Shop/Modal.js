@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import cancel from "./cancel.png";
+import cancel from "./AssetsShop/cancel.png";
 
 const Modal = ({ children, isOpen, onClose }) => {
   if (!isOpen) return null;

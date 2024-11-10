@@ -5,10 +5,10 @@ import { shopList } from './shopList';
 import Flowers from './Flowers';
 import Buttons from './Buttons';
 import './styleShop.css';
-import leaf from "./leaf.png";
-import gift from "./gift.png";
-import shuttle from "./shuttle.png";
-import certificate from "./certificate.png";
+import leaf from "./AssetsShop/leaf.png";
+import gift from "./AssetsShop/gift.png";
+import shuttle from "./AssetsShop/shuttle.png";
+import certificate from "./AssetsShop/certificate.png";
 
 
 const Shop = () => {

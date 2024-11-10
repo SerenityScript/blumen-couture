@@ -1,10 +1,10 @@
 import Amount from "./Amount";
-import garbage from "./garbage.png";
-import paypal from "./paypal.png";
-import visa from "./visa.png";
-import googlepay from "./google-pay.png";
-import applepay from "./apple-pay.png";
-import master from "./mastercard.png";
+import garbage from "./AssetsShop/garbage.png";
+import paypal from "./AssetsShop/paypal.png";
+import visa from "./AssetsShop/visa.png";
+import googlepay from "./AssetsShop/google-pay.png";
+import applepay from "./AssetsShop/apple-pay.png";
+import master from "./AssetsShop/mastercard.png";
 
 const Cart = ({ cart, setCart }) => {
 
