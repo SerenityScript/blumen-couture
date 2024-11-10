@@ -1,5 +1,10 @@
 import Amount from "./Amount";
 import garbage from "./garbage.png";
+import paypal from "./paypal.png";
+import visa from "./visa.png";
+import googlepay from "./google-pay.png";
+import applepay from "./apple-pay.png";
+import master from "./mastercard.png";
 
 const Cart = ({ cart, setCart }) => {
 
@@ -23,6 +28,13 @@ const Cart = ({ cart, setCart }) => {
       <div>
         <h2 className="CartHeading">{totalItems} Artikel</h2>
         <p className="CartTotalPrice">Gesamtpreis: $ {totalPrice.toFixed(2)}</p>
+        <div className="PayIconsCont">
+          <img className="PayIcon" src={paypal} alt="Paypal" />
+          <img className="PayIcon" src={visa} alt="Visa" />
+          <img className="PayIcon" src={googlepay} alt="Google Pay" />
+          <img className="PayIcon" src={applepay} alt="Apple Pay" />
+          <img className="PayIcon" src={master} alt="Mastercard" />
+        </div>
       </div>
       <hr className="hrLine" />
       <div>

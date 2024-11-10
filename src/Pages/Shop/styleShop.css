@@ -222,7 +222,7 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  margin: 5px;
+  margin: 10px;
 }
 
 .CartProductImg {
@@ -244,7 +244,7 @@
   font-family: "IBM Plex Serif", serif;
   font-size: 14px;
   color: #7D7C7C;
-  gap: 10px; /* Abstand zwischen den Buttons und der Zahl */
+  gap: 5px; /* Abstand zwischen den Buttons und der Zahl */
 }
 
 .AmountBtn {
@@ -276,6 +276,16 @@
 }
 
 .TraschIcon {
-  width: 20px;
-  height: 20px;
+  width: 18px;
+  height: 18px;
+}
+
+.PayIconsCont {
+  display: flex;
+  justify-content: space-around;
+}
+
+.PayIcon {
+  width: 30px;
+  
 }
