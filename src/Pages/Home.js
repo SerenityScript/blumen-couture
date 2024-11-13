@@ -4,6 +4,7 @@ import Intro from "../Components/Intro/Intro";
 import { Reviews } from "../Components/Reviews/Reviews";
 import Slides from "../Components/Slides";
 import { Link } from 'react-router-dom';
+import ToShopNavigate from "../Components/ToShopNavigate";
 
 const Home = () => {
   const images = [
@@ -30,6 +31,7 @@ const Home = () => {
           <Link className="ParGold" to="/about">Mehr über Blumen Couture erfahren...</Link>.
         </p>
       </div>
+      <ToShopNavigate/>
       <div className="HeadingCont">
         <h3 className="HeadingGold">Wir bieten eine exklusive Auswahl an luxuriösen Blumendiensten:</h3>
         <div className="AccordionContainer">
