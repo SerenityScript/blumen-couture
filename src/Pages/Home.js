@@ -1,10 +1,9 @@
-import { Accordion } from "../Components/Accordion/Accordion";
 import Awards from "../Components/Awards/Awards";
 import Intro from "../Components/Intro/Intro";
 import { Reviews } from "../Components/Reviews/Reviews";
 import Slides from "../Components/Slides";
-import { Link } from 'react-router-dom';
 import ToShopNavigate from "../Components/ToShopNavigate";
+import { useNavigate } from "react-router-dom";
 
 const Home = () => {
   const images = [
@@ -12,6 +11,7 @@ const Home = () => {
     "https://images.unsplash.com/photo-1474822189311-11c44f2aa6d1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDMxfHx8ZW58MHx8fHx8",
     "https://images.unsplash.com/photo-1640060902291-570e6cdb00e0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDc0fHx8ZW58MHx8fHx8"
   ]
+  const navigate = useNavigate();
   return (
     <div>
       <Slides images={images}/>
@@ -28,21 +28,16 @@ const Home = () => {
           <img src="https://images.unsplash.com/photo-1709240387877-30fd01230e6f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTA0fHxmbG9yaXN0fGVufDB8fDB8fHww" alt="Flowers" />
         </div>
         <p>
-          <Link className="ParGold" to="/about">Mehr über Blumen Couture erfahren...</Link>.
+          <h3 className="ParGold Cursor" onClick={() => { navigate("/about"); window.scrollTo(0, 0); }}>Mehr über Blumen Couture erfahren...</h3>.
         </p>
       </div>
       <ToShopNavigate/>
-      <div className="HeadingCont">
-        <h3 className="HeadingGold">Wir bieten eine exklusive Auswahl an luxuriösen Blumendiensten:</h3>
-        <div className="AccordionContainer">
-          <Accordion />
-        </div>
-      </div>
+      
       <div className="HeadingCont KontactUsContainer">
         <h2 className="MainHeading">Möchten Sie Ihren Traum wahr werden lassen? </h2>
         <p className="Par">Kontaktieren Sie uns und wir erfüllen es</p>
         <button className="KontaktUsBtn">
-        <Link className="ParGold KontaktUsBtnText" to="/contact">KONTAKT</Link>
+          <h3 onClick={() => { navigate("/contact"); window.scrollTo(0, 0); }} className="KontaktUsBtnText">KONTAKT</h3>
         </button>
       </div>
       <div className="HeadingCont">
