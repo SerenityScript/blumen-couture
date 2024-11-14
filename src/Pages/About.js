@@ -5,6 +5,7 @@ import { Reviews } from "../Components/Reviews/Reviews";
 import Slides from "../Components/Slides";
 import video from "./flowers.mp4";
 import random from "./dice.png";
+import { Accordion } from '../Components/Accordion/Accordion';
 
 const About = () => {
   const images = [
@@ -57,6 +58,13 @@ const About = () => {
 
       <div className="HeadingCont">
         <p className='ParStandart'>Blumen Couture bietet eine schnelle und zuverlässige Lieferung von Blumensträußen an, damit jeder Moment perfekt untermalt werden kann. Ob für spontane Überraschungen, last-minute Geschenke oder kurzfristige Events – mit unserem Express-Service sorgen wir dafür, dass jede Bestellung frisch und pünktlich ankommt. Jedes Arrangement wird unmittelbar vor der Auslieferung handgefertigt und sicher verpackt, um höchste Frische und Qualität zu garantieren. So können Sie sich darauf verlassen, dass jeder Strauß genau im richtigen Moment seine Wirkung entfaltet und Ihre Botschaft stilvoll übermittelt.</p>
+      </div>
+
+      <div className="HeadingCont">
+        <h3 className="HeadingGold">Wir bieten eine exklusive Auswahl an luxuriösen Blumendiensten:</h3>
+        <div className="AccordionContainer">
+          <Accordion />
+        </div>
       </div>
 
       <div className="HeadingCont">
