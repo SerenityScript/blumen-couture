@@ -85,6 +85,10 @@
   border: 1px solid #CDB37C;
 }
 
+.product-card:hover {
+  background-color: rgba(245, 245, 245, 0.6);
+}
+
 .product-info {
   display: flex;
   flex-direction: column;
