@@ -19,7 +19,7 @@ export const shopList = [
   },
 
   {
-    id: 16,
+    id: 3,
     name: "Glanzstück",
     searchTerm: "blumenstrauß",
     title: "Leuchtende Tulpen, Hyazinthen und Narzissen in frischen Frühlingsfarben.",
@@ -28,7 +28,7 @@ export const shopList = [
   },
 
   {
-    id: 17,
+    id: 4,
     name: "Wunschtraum",
     searchTerm: "blumenstrauß",
     title: "Ein glamouröser Strauß aus weißen Lilien und Rosen mit zartem Schleierkraut.",
@@ -37,7 +37,7 @@ export const shopList = [
   },
 
   {
-    id: 18,
+    id: 5,
     name: "Frühlingshauch",
     searchTerm: "blumenstrauß",
     title: "Romantische Kombination aus tiefroten Rosen und pinkfarbenem Alstroemeria.",
@@ -46,7 +46,7 @@ export const shopList = [
   },
 
   {
-    id: 19,
+    id: 6,
     name: "Sommerwiese",
     searchTerm: "blumenstrauß",
     title: "Strahlende Gerbera und gelbe Freesien für einen Hauch von Sonnenschein.",
@@ -55,7 +55,7 @@ export const shopList = [
   },
 
   {
-    id: 20,
+    id: 7,
     name: "Blütenmeer",
     searchTerm: "blumenstrauß",
     title: "Verzaubernde Orchideen und Anthurien in kräftigen, mystischen Farben.",
@@ -64,7 +64,7 @@ export const shopList = [
   },
 
   {
-    id: 21,
+    id: 8,
     name: "Liebesflair",
     searchTerm: "blumenstrauß",
     title: "Wildblumen und Gräser wie Kamille, Lavendel und Eukalyptus für eine natürliche Note.",
@@ -73,7 +73,7 @@ export const shopList = [
   },
 
   {
-    id: 22,
+    id: 9,
     name: "Strahlen",
     searchTerm: "blumenstrauß",
     title: "Exotische Protea, Sonnenblumen und orangefarbene Rosen für leuchtende Akzente.",
@@ -82,7 +82,7 @@ export const shopList = [
   },
 
   {
-    id: 23,
+    id: 10,
     name: "Seelenfrieden",
     searchTerm: "blumenstrauß",
     title: "Ein sanfter Mix aus weißen und grünen Blumen wie Hortensien, Nelken und Eukalyptus.",
@@ -91,7 +91,7 @@ export const shopList = [
   },
 
   {
-    id: 24,
+    id: 11,
     name: "Farbenspiel",
     searchTerm: "blumenstrauß",
     title: "Tiefviolette Iris und dunkelrote Amaryllis für einen Hauch von Dramatik und Eleganz.",
@@ -109,7 +109,7 @@ export const shopList = [
   },
 
   {
-    id: 9,
+    id: 13,
     name: "Lebensfreude",
     searchTerm: "zimmerPflanze",
     title: "Eine elegante Areca-Palme, die durch ihre dichten, fächerartigen Blätter ein beruhigendes, natürliches Ambiente schafft.",
@@ -118,7 +118,7 @@ export const shopList = [
   },
 
   {
-    id: 10,
+    id: 14,
     name: "Ewigkeit",
     searchTerm: "zimmerPflanze",
     title: "Eine majestätische Fiddle-Leaf-Ficus, deren imposante Blätter das Licht perfekt einfangen und jedem Raum Höhe und Struktur verleihen.",
@@ -127,7 +127,7 @@ export const shopList = [
   },
 
   {
-    id: 11,
+    id: 15,
     name: "Morgennebel",
     searchTerm: "zimmerPflanze",
     title: "Eine Calathea mit sanft gemusterten Blättern, deren weiche Farben an Nebel im Morgengrauen erinnern – perfekt für eine ruhige, entspannende Umgebung.",
@@ -136,7 +136,7 @@ export const shopList = [
   },
 
   {
-    id: 31,
+    id: 16,
     name: "Smaragd",
     searchTerm: "zimmerPflanze",
     title: "Eine farbenfrohe Bromelie mit leuchtenden Blüten, die positive Energie und ein exotisches Flair in den Raum bringt.",
@@ -145,7 +145,7 @@ export const shopList = [
   },
 
   {
-    id: 32,
+    id: 17,
     name: "Oase",
     searchTerm: "zimmerPflanze",
     title: "Eine prachtvolle Monstera mit großen, tiefgrünen Blättern, die an die Edelsteine des Dschungels erinnert und jedes Zimmer bereichert.",
@@ -154,7 +154,7 @@ export const shopList = [
   },
 
   {
-    id: 33,
+    id: 18,
     name: "Zenith",
     searchTerm: "zimmerPflanze",
     title: "Eine robuste, langlebige Zamioculcas (Glücksfeder) mit glänzend grünen Blättern, die für Beständigkeit und zeitlose Schönheit steht.",
@@ -163,7 +163,7 @@ export const shopList = [
   },
 
   {
-    id: 5,
+    id: 19,
     name: "Aurora",
     searchTerm: "vase",
     title: "Eine handgemalte Keramikvase, die durch ihre kunstvolle Bemalung in lebendigen Mustern eine kreative und einzigartige Atmosphäre schafft.",
@@ -172,7 +172,7 @@ export const shopList = [
   },
 
   {
-    id: 6,
+    id: 20,
     name: "Essenz",
     searchTerm: "vase",
     title: "Eine weiße Keramikvase, schlicht und elegant, die mit ihrem minimalistischen Design die Schönheit jeder Blume perfekt zur Geltung bringt.",
@@ -181,7 +181,7 @@ export const shopList = [
   },
 
   {
-    id: 14,
+    id: 21,
     name: "Opulenz",
     searchTerm: "vase",
     title: "Eine markante Keramikvase, die in zwei Varianten – intensives Rot oder beruhigendes Blau – erhältlich ist und durch ihre kräftigen Farben Akzente setzt.",
@@ -190,7 +190,7 @@ export const shopList = [
   },
 
   {
-    id: 25,
+    id: 22,
     name: "Harmonie",
     searchTerm: "vase",
     title: "Eine weiße Keramikvase, die durch ihre klare Form und sanfte Oberfläche Ruhe und Ausgewogenheit ausstrahlt.",
@@ -199,7 +199,7 @@ export const shopList = [
   },
 
   {
-    id: 26,
+    id: 23,
     name: "Mystique",
     searchTerm: "vase",
     title: "Eine geometrische graue Keramikvase, die mit ihren klaren Linien und facettierten Formen eine moderne, kunstvolle Ausstrahlung bietet.",
@@ -208,7 +208,7 @@ export const shopList = [
   },
 
   {
-    id: 27,
+    id: 24,
     name: "Elysium",
     searchTerm: "vase",
     title: "Eine handgemalte Keramikvase, die mit feinen, detailreichen Motiven und sanften Farben für eine romantische und raffinierte Wirkung sorgt.",
@@ -217,7 +217,7 @@ export const shopList = [
   },
 
   {
-    id: 3,
+    id: 25,
     name: "Levant",
     searchTerm: "kerze",
     title: "Eine zarte Kerze in sanften, erdigen Tönen, die den Raum mit einem warmen, natürlichen Duft erfüllt und eine beruhigende Atmosphäre schafft.",
@@ -226,7 +226,7 @@ export const shopList = [
   },
 
   {
-    id: 4,
+    id: 26,
     name: "Mondlicht",
     searchTerm: "kerze",
     title: "Eine elegante Kerze in Silber oder Weiß, die mit einem sanften Duft nach Jasmin und Vanille die stille Schönheit des Mondes widerspiegelt.",
@@ -235,7 +235,7 @@ export const shopList = [
   },
 
   {
-    id: 13,
+    id: 27,
     name: "Einklang",
     searchTerm: "kerze",
     title: "Eine harmonische Duftkerze in sanften Farben, die mit Noten von Lavendel und Bergamot für Entspannung und Ruhe sorgt.",
@@ -271,7 +271,7 @@ export const shopList = [
   },
 
   {
-    id: 7,
+    id: 31,
     name: "Blütenkuss",
     searchTerm: "geschenk",
     title: "Eine zarte Geschenkbox, gefüllt mit einer Auswahl an romantischen Rosen und zarten Lisianthus-Blüten, die für einen liebevollen und eleganten Moment sorgen.",
@@ -280,7 +280,7 @@ export const shopList = [
   },
 
   {
-    id: 8,
+    id: 32,
     name: "Herzstück",
     searchTerm: "geschenk",
     title: "Ein besonderes Geschenk, das eine Kombination aus Pfingstrosen und Freesien enthält – eine wahre Ode an die Schönheit der Liebe und Freundschaft.",
@@ -289,7 +289,7 @@ export const shopList = [
   },
 
   {
-    id: 15,
+    id: 33,
     name: "Lichtblick",
     searchTerm: "geschenk",
     title: "Eine leuchtende Box voller gelber Tulpen und Freesien, die für einen sonnigen Akzent im Raum sorgt und Freude verbreitet.",
