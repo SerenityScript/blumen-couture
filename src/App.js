@@ -26,16 +26,17 @@ function App() {
   }, [])
 
   return (
-    <div className='App'>
-      {stateLoader && <LoaderPage />}
-      <Router>
+    <Router> {/* Router hier auf oberster Ebene */}
+      <div className="App">
+        {stateLoader && <LoaderPage />}
+
         <nav>
-          <img src={logo} className='logoImg' alt='My Logo' />
-          <Link to="/" className='navElement'>Home</Link>
-          <Link to="/shop" className='navElement'>Shop</Link>
-          <Link to="/eventDecoration" className='navElement'>Event Dekoration</Link>
-          <Link to="/about" className='navElement'>Über uns</Link>
-          <Link to="/contact" className='navElement'>Kontakt</Link>
+          <img src={logo} className="logoImg" alt="My Logo" />
+          <Link to="/" className="navElement">Startseite</Link>
+          <Link to="/shop" className="navElement">Shop</Link>
+          <Link to="/eventDecoration" className="navElement">Event Dekoration</Link>
+          <Link to="/about" className="navElement">Über uns</Link>
+          <Link to="/contact" className="navElement">Kontakt</Link>
         </nav>
 
         <Routes>
@@ -46,10 +47,10 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/about/:title" element={<AboutProducts />} />
         </Routes>
-      </Router>
 
-      <Footer />
-    </div>
+        <Footer /> {/* Footer ist jetzt innerhalb des Router-Kontexts */}
+      </div>
+    </Router>
   );
 }
 
