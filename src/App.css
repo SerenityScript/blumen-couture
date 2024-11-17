@@ -22,11 +22,12 @@ nav {
   padding: 7px 20px;
   font-size: 12px;
   font-family: "IBM Plex Serif", serif;
+  transition: ease-out 0.5s;
 }
 
 .navElement:hover {
   background-color: rgba(255, 255, 255, 0.3);
-  transition: ease-out 0.5s;
+  
 }
 
 .IntroContainer {
@@ -59,54 +60,19 @@ nav {
   letter-spacing: 1px;
 }
 
-.SlidesContainer {
-  position: absolute;
-  width: 100%;
-  height: 500px;
+.HomeMainCont {
   display: flex;
-  justify-content: center;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: -1;
-}
-
-.SlideImage {
-  z-index: -1;
-  filter: brightness(50%);
-  opacity: 0;
-  transition: opacity 2s ease-in-out;
-  position: absolute;
-}
-
-.SlideImage.active {
-  opacity: 1; /* The active slide becomes visible */
-}
-
-.SlideLineCont {
-  position: absolute;
-  display: flex;
-  bottom: 5%;
-}
-
-.SlideLine {
-  background-color: rgba(255, 255, 255, 0.5);
-  width: 30px;
-  height: 5px;
-  margin: 0 5px;
-  transition: background-color 0.3s;
-  border-radius: 10px;
-}
-
-.active {
-  background-color: #CDB37C;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(205, 179, 124, 0.1);
 }
 
 .HeadingCont {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 30px;
+  width: 80%;
+  background-color: #ffffff;
 }
 
 .HeadingGold {
@@ -133,7 +99,11 @@ nav {
   font-family: "IBM Plex Serif", serif;
   font-weight: 300;
   color: #7D7C7C;
-  text-align: center;
+  text-align: justify;
+}
+
+.ParLong {
+  margin: 10px 100px;
 }
 
 .ParGold {
@@ -142,14 +112,26 @@ nav {
   font-weight: 300;
 }
 
-.Cursor {
+.CTA {
+  background-color: #ffffff;
+  border: 1px solid #CDB37C;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.CTA:hover {
   cursor: pointer;
 }
 
 .ImageCont {
-  height: 200px;
-  width: 400px;
+  width: 600px;
   margin-top: 30px;
+  border: 1px solid #CDB37C;
+  padding: 20px;
+}
+
+.Margin {
+  margin-bottom: 50px;
 }
 
 .AccordionContainer {
@@ -157,14 +139,18 @@ nav {
 }
 
 .KontactUsContainer {
-  height: 600px;
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("https://images.unsplash.com/photo-1625076019815-b1a5f7e5ef1e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDEwM3x8fGVufDB8fHx8fA%3D%3D");
+  width: 100%;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url("https://images.unsplash.com/photo-1625076019815-b1a5f7e5ef1e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDEwM3x8fGVufDB8fHx8fA%3D%3D");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
-  margin-top: 50px;
-  padding-top: 90px;
+  margin: 50px;
   color: #ffffff;
 }
 
@@ -173,13 +159,13 @@ nav {
   border-radius: 4px;
   border: none;
   margin-top: 30px;
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: #CDB37C;
   cursor: pointer;
   transition: .5s;
 }
 
 .KontaktUsBtn:hover {
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: #b59763;
 }
 
 .KontaktUsBtnText {
@@ -190,29 +176,10 @@ nav {
   text-decoration: none;
 }
 
-.InstaFeed {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.InstaImgCont {
-  width: 250px;
-  height: 250px;
-  overflow: hidden;
-  margin: 5px;
-}
-
-.InstaImg {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center; 
-}
-
 .Awards {
   display: flex;
   justify-content: space-between;
-  margin-top: 70px;
+  margin: 80px 0;
 }
 
 .AwardImg {
@@ -225,6 +192,7 @@ nav {
   width: 600px;
   border: 1px solid #CDB37C;
   padding: 15px;
+  box-sizing: border-box;
 }
 
 .ParEvent {
@@ -237,6 +205,7 @@ nav {
 
 .btnQuotes {
   cursor: pointer;
+  margin-bottom: 20px;
 }
 
 .random {
@@ -248,34 +217,3 @@ video {
   border: 1px solid #CDB37C;
   padding: 15px;
 }
-
-.ToShopNavigateMainCont {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 15px;
-}
-
-.ToShopNavigateImg {
-  width: 250px;
-  height: 250px;
-  margin: 5px;
-  transition: 1s;
-}
-
-.ToShopNavigateImg:hover {
-  filter: brightness(0.8);
-}
-
-.ToShopNavigateBtn {
-  display: flex;
-  align-items: center;
-  gap: 5px;
-  transition: .5s;
-}
-
-.ToShopNavigateBtn:hover {
-  gap: 15px;
-}
-
