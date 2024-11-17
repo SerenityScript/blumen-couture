@@ -1,0 +1,24 @@
+.CoundownCont {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.HeadingCountdown {
+  font-family: "Mea Culpa", cursive;
+  font-size: 38px;
+  font-weight: 200;
+  margin-bottom: 0;
+  letter-spacing: 3px;
+  color: #7D7C7C;
+}
+
+.CountdownItem {
+  margin: 20px;
+  background-color: rgba(205, 179, 124, 0.1);
+  color: #7D7C7C;
+  font-family: "IBM Plex Serif", serif;
+  border-radius: 20px;
+  width: 100px;
+  height: 130px;
+}
