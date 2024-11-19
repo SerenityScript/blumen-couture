@@ -42,9 +42,7 @@
 }
 
 .change:hover {
-  background-color: rgba(205, 179, 124, 0.1);
   background-color: #b59763;
-  
 }
 
 .FirstShoppingCartCont {
@@ -70,7 +68,6 @@
   color: #CDB37C;
   letter-spacing: 2px;
   font-size: 18px;
-
 }
 
 .products {
@@ -109,6 +106,7 @@
 
 .AboutProductsImg {
   width: 400px;
+  margin-bottom: 40px;
 }
 
 .btnHinzufügen {
@@ -136,9 +134,8 @@
 
 .ShoppingCartCont {
   position: fixed;
-  bottom: 30px;
-  right: 30px;
-  border-radius: 50%;
+  bottom: 80px;
+  right: 10px;
   opacity: 0;
   transition: opacity 2s ease-in-out;
 }
@@ -153,7 +150,7 @@
 }
 
 .ShoppingCartImg {
-  width: 50px;
+  width: 60px;
 }
 
 .ShoppingCartNumber {
@@ -167,7 +164,6 @@
   padding: 5px;
   color: red;
 }
-
 
 .modal-overlay {
   position: fixed;
@@ -286,11 +282,11 @@
 .PayIconsCont {
   display: flex;
   justify-content: space-around;
+  margin-top: 20px;
 }
 
 .PayIcon {
-  width: 30px;
-  
+  width: 28px;
 }
 
 .aboutProducts {
@@ -322,7 +318,6 @@
   color: #CDB37C;
   font-weight: 100;
   font-size: 48px;
-  
 }
 
 .parAboutProducts {
@@ -338,7 +333,6 @@
   cursor: pointer;
   padding: 10px 30px;
   border-radius: 10px;
-  margin-top: 20px;
   transition: .4s;
 }
 

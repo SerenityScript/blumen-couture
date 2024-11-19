@@ -6,8 +6,7 @@ import shoppingCart from "./AssetsShop/shoppingCart.png";
 
 
 function Flowers({ flowers }) {
-  const [cart, setCart] = useState(
-    localStorage.cart ? JSON.parse(localStorage.cart) : []);
+  const [cart, setCart] = useState(localStorage.cart ? JSON.parse(localStorage.cart) : []);
   const [clickedItems, setClickedItems] = useState([]);
   const [isCartOpen, setIsCartOpen] = useState(false);
   const [isVisible, setIsVisible] = useState(false);
@@ -54,11 +53,13 @@ function Flowers({ flowers }) {
 
   return (
     <div>
+      
       <div className="FirstShoppingCartCont">
         <button onClick={openCart} className="FirstShoppingCartBtn">
           <p className="FirstShoppingCartPar">Warenkorb: {totalItems}</p>
         </button>
       </div>
+
       <div className="products">
         {flowers.map((item => {
           const { id, name, price, image } = item;

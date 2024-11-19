@@ -1,17 +1,51 @@
 .footer {
   background-color: #387478;
-  margin-top: 70px;
-  color: #ffffff;
-  font-family: "IBM Plex Serif", serif;
+  color: #fff;
+  padding: 20px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top: 3px solid #CDB37C; /* Goldene Akzente */
+}
+
+.Row {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  
-  padding: 50px 20px;
 }
-.logoFooter {
-  width: 110px;
-  height: 110px;
+
+.Column {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer .logoFooter {
+  width: 85px;
+  height: 85px;
+}
+
+.LogoDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.footer h3 {
+  font-size: 1.3rem;
+  color: #CDB37C; /* Goldene Farbe */
+}
+
+.footer p, .footer a {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: #d4af37; /* Goldene Hover-Effekte */
 }
 
 .footer-nav {
@@ -20,14 +54,21 @@
   align-items: flex-start;
 }
 
-a {
+.footer-nav button {
+  background: transparent;
+  border: none;
   color: #ffffff;
-  text-decoration: none;
-  letter-spacing: 2px;
+  font-size: 1rem;
+  margin-bottom: 12px;
+  cursor: pointer;
+}
+
+.footer-nav button:hover {
+  color: #CDB37C;
 }
 
 .FooterSocialIcon {
-  width: 25px;
-  height: 25px;
-  margin: 10px;
+  width: 24px;
+  height: 24px;
+  margin: 0 10px ;
 }

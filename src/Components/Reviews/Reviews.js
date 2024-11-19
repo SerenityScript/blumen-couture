@@ -30,7 +30,7 @@ export const Reviews = () => {
           <img src={image} alt="Person" />
         </div>
         <div className="CommentCont">
-          <img className="ImgComment" src={coma} alt="Comment" />
+          <img src={coma} alt="Person" />
         </div>
         <div className="ReviewLineCont">
           {persons.map((_, index) => (

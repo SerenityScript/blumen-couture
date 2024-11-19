@@ -39,7 +39,16 @@ const ToEventsNavigate = () => {
         </div>
         
       </div>
-      <h3 className="ParGold Cursor Margin CTA" onClick={() => { navigate("/eventDecoration"); window.scrollTo({ top: 0, behavior: "smooth" }); }}>Mehr über Event Dekoration erfahren...</h3>
+      <button
+        className="ToPageNavigateBtn"
+        onClick={() => {
+          navigate("/eventDecoration");
+          window.scrollTo({ top: 0});
+        }}
+        aria-label="Learn more about Event Decoration"
+      >
+        Mehr über Event Dekoration erfahren...
+      </button>
 
       </div>
   )

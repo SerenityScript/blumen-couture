@@ -28,6 +28,7 @@ const Cart = ({ cart, setCart }) => {
       <div>
         <h2 className="CartHeading">{totalItems} Artikel</h2>
         <p className="CartTotalPrice">Gesamtpreis: $ {totalPrice.toFixed(2)}</p>
+        <button className="btnAboutProducts">Zur Kasse</button>
         <div className="PayIconsCont">
           <img className="PayIcon" src={paypal} alt="Paypal" />
           <img className="PayIcon" src={visa} alt="Visa" />

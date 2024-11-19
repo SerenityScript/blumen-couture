@@ -34,7 +34,7 @@ export const listEvents = [
   {
     id: 5,
     image: "https://images.unsplash.com/photo-1625076141340-af58522b84ce?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDIyfHx8ZW58MHx8fHx8",
-    title: "Luxuriöse Dinnerpartys und private Events",
+    title: "Dinnerpartys und private Events",
     description: "Für private Dinnerpartys und exklusive Veranstaltungen im kleinen Kreis bietet Blumen Couture feine, maßgeschneiderte Blumenarrangements, die den Stil des Gastgebers und die Atmosphäre des Abends perfekt unterstreichen. Ob es ein klassisches Abendessen oder ein festlicher Empfang ist, zarte Blumensträuße in harmonischen Farben, edle Kerzenleuchter und elegante Vasen können jeden Raum in eine luxuriöse Kulisse verwandeln.",
     showMore: false
   },

@@ -1,7 +1,7 @@
 import { useParams, useNavigate } from "react-router-dom";
 import { shopList } from "./shopList";
 import Intro from "../../Components/Intro/Intro";
-import Slides from "../../Components/Slides";
+import Slides from "../../Components/Slides/Slides";
 
 function AboutProducts() {
   const navigate = useNavigate();

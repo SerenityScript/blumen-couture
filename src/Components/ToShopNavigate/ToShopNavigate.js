@@ -17,7 +17,14 @@ const ToShopNavigate = () => {
         </div>
       </div>
       <div>
-        <button className="ToShopNavigateBtn" onClick={() => { navigate("/shop"); window.scrollTo({ top: 0, behavior: "smooth" });}}>
+        <button
+          className="ToShopNavigateBtn"
+          onClick={() => {
+            navigate("/shop");
+            window.scrollTo({ top: 0});
+          }}
+          aria-label="Learn more about our Shop"
+        >
           <p className="HeadingGold">Zum Shop</p>
           <img className="ImgBtn" src={arrow} alt="Next" />
         </button>

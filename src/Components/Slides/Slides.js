@@ -15,19 +15,19 @@ function Slides({images}) {
     return () => clearInterval(slideInterval)
   }, [nextSlide])
 
-
   return (
     <div className="SlidesMainContainer">
+
       <div className="SlidesContainer">
-      {images.map((image, index) => (
-        <img
-          key={index}
-          className={`SlideImage ${index === slide ? 'active' : ''}`}
-          src={image}
-          alt={`slide-${index}`}
-        />
-      ))}
-        {/* <img className="SlideImage" src={images[slide]} alt={`slide-${slide}`} /> */}
+        {images.map((image, index) => (
+          <img
+            key={index}
+            className={`SlideImage ${index === slide ? 'active' : ''}`}
+            src={image}
+            alt={`slide-${index}`}
+          />
+        ))}
+        
         <div className="SlideLineCont">
           {images.map((_, index) => (
             <div
@@ -36,6 +36,7 @@ function Slides({images}) {
             ></div>
           ))}
         </div>
+
       </div>
     </div>
     
