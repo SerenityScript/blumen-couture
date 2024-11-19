@@ -14,7 +14,7 @@ function ContactForm() {
     <div className='card'>
       <h3 className="HeadingGold">Schreiben Sie uns</h3>
 
-    <form onSubmit={handleSubmit} className="form">
+    <form onSubmit={handleSubmit} className="form" autoComplete="on">
     <div className="group">
       <label htmlFor="email">
         Email Address
@@ -23,6 +23,7 @@ function ContactForm() {
         id="email"
         type="email" 
         name="email"
+        autoComplete="email"
       />
       <ValidationError 
         prefix="Email" 
@@ -34,6 +35,7 @@ function ContactForm() {
         id="message"
         name="message"
         placeholder='Ihre Nachricht'
+        autoComplete="off"
       />
       <ValidationError 
         prefix="Message" 
