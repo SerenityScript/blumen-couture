@@ -1,33 +1,132 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+}
+
 .App {
   margin: 0;
   padding: 0;
   position: relative;
 }
 
+/* Logo */
 .logoImg {
-  width: 100px;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: 2px;
+  right: 10px;
 }
 
-nav {
+/* Navbar-Styles */
+.navbar {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
+  padding: 10px 0;
 }
 
+.nav-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.menu-toggle {
+  display: block;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Navigation Links */
+.nav-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000000;
+  margin-top: 0;
+  opacity: 0; /* Unsichtbar bei mobilem Zustand */
+  transform: translateY(-20px); /* Startposition */
+  visibility: hidden;
+  gap: 0;
+  transition: none; /* Animation von GSAP gesteuert */
+}
+
+/* Navigationselemente */
 .navElement {
+  font-family: "IBM Plex Serif", serif;
+  font-weight: 300;
   color: #ffffff;
   text-decoration: none;
   border: 0.5px solid white;
-  padding: 7px 20px;
-  font-size: 12px;
-  font-family: "IBM Plex Serif", serif;
-  transition: ease-out 0.5s;
+  padding: 10px 20px;
+  font-size: 14px;
+  text-align: center;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  width: 100%; /* Mobile Breite */
 }
 
 .navElement:hover {
-  background-color: rgba(255, 255, 255, 0.3);
-  
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.navElement.active {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Desktop-Stile */
+@media (min-width: 768px) {
+  .logoImg {
+    width: 90px;
+    height: 90px;
+    left: 20px;
+  }
+  .menu-toggle {
+    display: none; /* Verberge Burger-Button auf größeren Bildschirmen */
+  }
+
+  .nav-links {
+    display: flex; /* Zeige Navigation als Inline-Menü */
+    flex-direction: row;
+    position: static; /* Statisch für Desktop-Ansicht */
+    background-color: transparent;
+    width: auto;
+    opacity: 1; /* Sicherstellen, dass die Links sichtbar sind */
+    visibility: visible; /* Links auf Desktop sichtbar machen */
+    gap: 2rem; /* Abstand zwischen den Links */
+    transform: none; /* Keine Animation notwendig */
+    transition: none;
+  }
+
+  .navElement {
+    border: 0.5px solid white;
+    padding: 7px 20px;
+    font-size: 12px;
+    width: auto; /* Breite nur basierend auf Inhalt */
+    color: #ffffff;
+  }
+
+  .navElement:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 .IntroContainer {
@@ -35,7 +134,8 @@ nav {
   flex-direction: column;
   align-items: center;
   color: #ffffff;
-  margin-bottom: 120px;
+  margin-bottom: 150px;
+  padding-top: 65px;
 }
 
 .MainHeading {
@@ -138,6 +238,22 @@ nav {
   width: 100%;
 }
 
+.ToPageNavigateBtn {
+  border: 1px solid #CDB37C;
+  border-radius: 20px;
+  padding: 10px;
+  font-family: "IBM Plex Serif", serif;
+  color: #CDB37C;
+  font-size: 18px;
+  font-weight: 300;
+  transition: .5s;
+}
+
+.ToPageNavigateBtn:hover {
+  background-color: #CDB37C;
+  color: #ffffff;
+}
+
 .KontactUsContainer {
   width: 100%;
   height: 500px;
@@ -155,10 +271,14 @@ nav {
 }
 
 .KontaktUsBtn {
-  padding: 5px 30px;
-  border-radius: 4px;
+  font-family: "IBM Plex Serif", serif;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 300;
+  text-decoration: none;
+  padding: 10px 30px;
+  border-radius: 20px;
   border: none;
-  margin-top: 30px;
   background-color: #CDB37C;
   cursor: pointer;
   transition: .5s;
@@ -166,14 +286,6 @@ nav {
 
 .KontaktUsBtn:hover {
   background-color: #b59763;
-}
-
-.KontaktUsBtnText {
-  font-family: "IBM Plex Serif", serif;
-  color: #ffffff;
-  font-size: 18px;
-  font-weight: 300;
-  text-decoration: none;
 }
 
 .Awards {
