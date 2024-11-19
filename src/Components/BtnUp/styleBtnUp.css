@@ -1,0 +1,16 @@
+.BtnUpIcon {
+  width: 55px;
+
+}
+
+.BtnUp {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  opacity: 0;
+  transition: opacity 2s ease-in-out;
+}
+
+.BtnUp.visible {
+  opacity: 1;
+}
