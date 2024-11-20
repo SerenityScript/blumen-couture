@@ -69,11 +69,10 @@ const Footer = () => {
         
         <div className="LogoDiv">
           <img src={logo} alt="My Logo" className="logoFooter" />
-          <p>&copy; 2000 Blumen Couture. Alle Rechte vorbehalten.</p>
-          <p>Alle Bilder von Unsplash. Alle Icons von Freepik.</p>
-          <p>Entwickelt von SerenityScript für die Lernzwecke.</p>
+          <p className="FooterParDown">&copy; 2000 Blumen Couture. Alle Rechte vorbehalten.</p>
+          <p className="FooterParDown">Alle Bilder von Unsplash. Alle Icons von Freepik.</p>
+          <p className="FooterParDown">Entwickelt von SerenityScript für die Lernzwecke.</p>
         </div>
-      
       
     </footer>
   );
