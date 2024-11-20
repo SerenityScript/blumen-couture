@@ -8,9 +8,9 @@
   font-size: 24px;
   letter-spacing: 1px;
   font-style: italic;
-  }
+}
 
-  .defaultAccordion {
+.defaultAccordion {
   padding: 25px;
   border: 1px solid #7D7C7C;;
   cursor: pointer;
@@ -21,27 +21,59 @@
   letter-spacing: 1px;
   font-style: italic;
   transition: 0.4s;
+}
+
+.defaultAccordion:hover {
+  background-color: rgba(205, 179, 124, 0.1);
+  color: #CDB37C;
+  border: 1px solid #CDB37C;
+}
+
+.ContentContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: rgba(205, 179, 124, 0.03);
+  gap: 50px;
+}
+
+.AccordionImgCont {
+  width: 360px;
+  height: 280px;
+}
+.AccordionContentCont {
+  width: 360px;
+  padding: 10px;
+}
+
+.content {
+  font-family: "IBM Plex Serif", serif;
+  font-weight: 300;
+  color: #7D7C7C;
+  letter-spacing: 1px;
+  line-height: 30px;
+}
+
+@media (max-width: 768px) {
+  .activeAccordion {
+    padding: 7px;
+    font-size: 16px;
   }
 
-  .defaultAccordion:hover {
-    background-color: rgba(205, 179, 124, 0.1);
-    color: #CDB37C;
-    border: 1px solid #CDB37C;
+  .defaultAccordion {
+  padding: 7px;
+  font-size: 16px;
   }
 
   .ContentContainer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    background-color: rgba(205, 179, 124, 0.03);
-    gap: 50px;
+    gap: 5px;
   }
 
   .AccordionImgCont {
-    width: 360px;
-    height: 350px;
+    width: 260px;
+    height: 160px;
   }
 
   .AccordionContentCont {
@@ -50,9 +82,9 @@
   }
   
   .content {
-    font-family: "IBM Plex Serif", serif;
-    font-weight: 300;
-    color: #7D7C7C;
-    letter-spacing: 1px;
-    line-height: 30px;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 20px;
+    text-align: center;
   }
+}
