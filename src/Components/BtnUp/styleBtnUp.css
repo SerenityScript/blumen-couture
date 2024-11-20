@@ -1,6 +1,5 @@
 .BtnUpIcon {
   width: 55px;
-
 }
 
 .BtnUp {
@@ -13,4 +12,15 @@
 
 .BtnUp.visible {
   opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .BtnUpIcon {
+    width: 40px;
+  }
+
+  .BtnUp {
+    right: 20px;
+    bottom: 2px;
+  }
 }
