@@ -1,5 +1,7 @@
 html {
   scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -9,19 +11,18 @@ body {
 .App {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   position: relative;
 }
 
-/* Logo */
 .logoImg {
-  width: 60px;
-  height: 60px;
   position: absolute;
+  width: 90px;
+  height: 90px;
   top: 2px;
-  right: 10px;
+  left: 20px;
 }
 
-/* Navbar-Styles */
 .navbar {
   position: relative;
   top: 0;
@@ -32,7 +33,7 @@ body {
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
-  padding: 10px 0;
+  padding: 20px 0;
 }
 
 .nav-header {
@@ -43,7 +44,7 @@ body {
 }
 
 .menu-toggle {
-  display: block;
+  display: none;
   background: none;
   border: none;
   color: white;
@@ -51,82 +52,38 @@ body {
   cursor: pointer;
 }
 
-/* Navigation Links */
 .nav-links {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
-  position: absolute;
-  top: 100%;
-  left: 0;
-  z-index: 1000000;
-  margin-top: 0;
-  opacity: 0; /* Unsichtbar bei mobilem Zustand */
-  transform: translateY(-20px); /* Startposition */
-  visibility: hidden;
-  gap: 0;
-  transition: none; /* Animation von GSAP gesteuert */
+  flex-direction: row;
+  position: static;
+  background-color: transparent;
+  width: auto;
+  opacity: 1;
+  visibility: visible;
+  gap: 2rem;
+  transform: none;
+  transition: none;
 }
 
-/* Navigationselemente */
 .navElement {
   font-family: "IBM Plex Serif", serif;
   font-weight: 300;
   color: #ffffff;
   text-decoration: none;
   border: 0.5px solid white;
-  padding: 10px 20px;
-  font-size: 14px;
+  padding: 7px 20px;
+  font-size: 12px;
   text-align: center;
   transition: background-color 0.3s ease, color 0.3s ease;
-  width: 100%; /* Mobile Breite */
+  width: auto;
 }
 
 .navElement:hover {
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 .navElement.active {
   background-color: rgba(255, 255, 255, 0.2);
-}
-
-/* Desktop-Stile */
-@media (min-width: 768px) {
-  .logoImg {
-    width: 90px;
-    height: 90px;
-    left: 20px;
-  }
-  .menu-toggle {
-    display: none; /* Verberge Burger-Button auf größeren Bildschirmen */
-  }
-
-  .nav-links {
-    display: flex; /* Zeige Navigation als Inline-Menü */
-    flex-direction: row;
-    position: static; /* Statisch für Desktop-Ansicht */
-    background-color: transparent;
-    width: auto;
-    opacity: 1; /* Sicherstellen, dass die Links sichtbar sind */
-    visibility: visible; /* Links auf Desktop sichtbar machen */
-    gap: 2rem; /* Abstand zwischen den Links */
-    transform: none; /* Keine Animation notwendig */
-    transition: none;
-  }
-
-  .navElement {
-    border: 0.5px solid white;
-    padding: 7px 20px;
-    font-size: 12px;
-    width: auto; /* Breite nur basierend auf Inhalt */
-    color: #ffffff;
-  }
-
-  .navElement:hover {
-    background-color: rgba(255, 255, 255, 0.3);
-  }
 }
 
 .IntroContainer {
@@ -134,8 +91,8 @@ body {
   flex-direction: column;
   align-items: center;
   color: #ffffff;
-  margin-bottom: 150px;
-  padding-top: 65px;
+  margin-bottom: 55px;
+  padding-top: 35px;
 }
 
 .MainHeading {
@@ -199,7 +156,7 @@ body {
   font-family: "IBM Plex Serif", serif;
   font-weight: 300;
   color: #7D7C7C;
-  text-align: justify;
+  text-align: center;
 }
 
 .ParLong {
@@ -212,19 +169,8 @@ body {
   font-weight: 300;
 }
 
-.CTA {
-  background-color: #ffffff;
-  border: 1px solid #CDB37C;
-  border-radius: 20px;
-  padding: 10px;
-}
-
-.CTA:hover {
-  cursor: pointer;
-}
-
 .ImageCont {
-  width: 600px;
+  width: 50%;
   margin-top: 30px;
   border: 1px solid #CDB37C;
   padding: 20px;
@@ -266,7 +212,6 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
-  margin: 50px;
   color: #ffffff;
 }
 
@@ -301,18 +246,19 @@ body {
 }
 
 .EventImg {
-  width: 600px;
+  width: 60%;
   border: 1px solid #CDB37C;
   padding: 15px;
   box-sizing: border-box;
 }
 
 .ParEvent {
-  width: 600px;
+  width: 60%;
   font-size: 16px;
   font-family: "IBM Plex Serif", serif;
   font-weight: 300;
   color: #7D7C7C;
+  text-align: justify;
 }
 
 .btnQuotes {
@@ -328,4 +274,153 @@ video {
   width: 600px;
   border: 1px solid #CDB37C;
   padding: 15px;
+}
+
+@media (max-width: 768px) {
+  .logoImg {
+    width: 60px;
+    height: 60px;
+    right: 10px;
+    left: auto;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .navbar {
+    padding: 0;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000000;
+    margin-top: 0;
+    opacity: 0;
+    transform: translateY(-20px);
+    visibility: hidden;
+    gap: 0;
+    transition: none;
+  }
+
+  .navElement {
+    padding: 10px 20px;
+    font-size: 14px;
+    width: 100%;
+  }
+
+  .navElement:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+
+  .IntroContainer {
+    margin-bottom: 17px;
+    padding-top: 15px;
+  }
+
+  .MainHeading {
+    font-weight: 200;
+    font-size: 18px;
+  }
+
+  .Heading {
+    font-size: 26px;
+    margin: 0;
+  }
+  
+  .Par {
+    font-size: 14px;
+    font-weight: 200;
+  }
+  
+  .HeadingCont {
+    width: 95%;
+  }
+
+  .HeadingGold {
+    font-size: 16px;
+  }
+  
+  .ParCursive {
+    font-size: 16px;
+  }
+  
+  .ParStandart {
+    font-size: 14px;
+  }
+  
+  .ParLong {
+    margin: 10px 15px;
+  }
+
+  .ImageCont {
+    width: 70%;
+    margin-top: 5px;
+    padding: 10px;
+  }
+  
+  .Margin {
+    margin-bottom: 10px;
+  }
+
+  .ToPageNavigateBtn {
+    padding: 8px;
+    font-size: 14px;
+    background-color: rgba(255, 255, 255, 0.7);
+  }
+  
+  .KontactUsContainer {
+    height: 200px;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url("https://images.unsplash.com/photo-1625076019815-b1a5f7e5ef1e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDEwM3x8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 10px 0;
+  }
+  
+  .KontaktUsBtn {
+    font-size: 12px;
+    font-weight: 200;
+    padding: 5px 20px;
+  }
+  
+  .Awards {
+    margin: 30px 0;
+  }
+  
+  .AwardImg {
+    width: 80px;
+    margin: 0 15px;
+  }
+  
+  .EventImg {
+    width: 90%;
+    padding: 10px;
+  }
+  
+  .ParEvent {
+    width: 90%;
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .btnQuotes {
+    margin-bottom: 10px;
+  }
+  
+  .random {
+    width: 35px;
+  }
+  
+  video {
+    width: 86%;
+    padding: 10px;
+  }
 }
