@@ -11,7 +11,6 @@
   width: 650px;
   display: flex;
   flex-direction: column;
-  
 }
 
 .form {
@@ -69,4 +68,16 @@
 .form button:hover {
   background-color: #CDB37C;
   color: #fff;
+}
+
+@media (max-width: 768px) {
+  .MessageCont {
+    height: 200px;
+    margin-top: 20px;
+    padding-top: 20px;
+  }
+
+  .card {
+    width: 90%;
+  }
 }
