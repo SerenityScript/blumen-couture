@@ -8,6 +8,7 @@
   font-family: "Mea Culpa", cursive;
   font-size: 38px;
   font-weight: 200;
+  margin-top: 50px;
   margin-bottom: 0;
   letter-spacing: 3px;
   color: #7D7C7C;
@@ -21,4 +22,35 @@
   border-radius: 20px;
   width: 100px;
   height: 130px;
+}
+
+@media (max-width: 768px) {
+  .CoundownCont {
+    margin-bottom: 40px;
+  }
+  
+  .HeadingCountdown {
+    font-size: 28px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+  }
+  
+  .CountdownItem {
+    margin: 5px;
+    background-color: rgba(205, 179, 124, 0.1);
+    color: #7D7C7C;
+    font-family: "IBM Plex Serif", serif;
+    border-radius: 20px;
+    width: 76px;
+    height: 100px;
+  }
+  
+  .CountdownNumber {
+    font-size: 18px;
+    
+  }
+
+  .CountdownWord {
+    font-size: 14px;
+  }
 }
