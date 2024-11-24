@@ -33,20 +33,20 @@ const Countdown = ({ targetDate }) => {
       <h1 className="HeadingCountdown">Valentinstag Sale in:</h1>
       <div className="CoundownCont">
         <div className="CountdownItem">
-          <h2>{timeLeft.days}</h2>
-          <p>Tage</p>
+          <h2 className="CountdownNumber">{timeLeft.days}</h2>
+          <p className="CountdownWord">Tage</p>
         </div>
         <div className="CountdownItem">
-          <h2>{timeLeft.hours}</h2>
-          <p>Stunden</p>
+          <h2 className="CountdownNumber">{timeLeft.hours}</h2>
+          <p className="CountdownWord">Stunden</p>
         </div>
         <div className="CountdownItem">
-          <h2>{timeLeft.minutes}</h2>
-          <p>Minuten</p>
+          <h2 className="CountdownNumber">{timeLeft.minutes}</h2>
+          <p className="CountdownWord">Minuten</p>
         </div>
         <div className="CountdownItem">
-          <h2>{timeLeft.seconds}</h2>
-          <p>Sekunden</p>
+          <h2 className="CountdownNumber">{timeLeft.seconds}</h2>
+          <p className="CountdownWord">Sekunden</p>
         </div>
       </div>
     </div>
