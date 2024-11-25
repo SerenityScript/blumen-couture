@@ -1,32 +1,48 @@
-.MainCont {
+.ReviewsMainCont {
+  width: 98%;
+  min-height: 400px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: rgba(205, 179, 124, 0.1);
   position: relative;
   box-sizing: border-box;
-  padding: 30px 5px;
-  margin: 50px 10px;
+  padding: 0 10px;
+  margin: 50px 0;
+  border: 5px solid #ffffff;
 }
 
-.ContentCont {
+.ReviewsContentCont {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
+.ReviewPar {
+  position: absolute;
+  top: 10%;
+  width: 80%;
+}
+
+.ReviewName {
+  position: absolute;
+  top: 30%;
+}
+
 .CommentCont {
   position: absolute;
   top: 0;
-  z-index: -1;
+  
 }
 
-.ImgCont {
+.ReviewsImgCont {
   width: 150px;
   height: 150px;
   overflow: hidden;
   border-radius: 1000px;
-  margin: 20px;
+  z-index: 10;
+  position: absolute;
+  bottom: 15%;
 }
 
 img {
@@ -41,7 +57,7 @@ button {
   border: none;
 }
 
-.ImgBtn {
+.ReviewsImgBtn {
   width: 70px;
 }
 
@@ -62,4 +78,30 @@ button {
 
 .active {
   background-color: #CDB37C;
+}
+
+@media (max-width: 768px) {
+  .ReviewsMainCont {
+    width: 100%;
+    min-height: 350px;
+    padding: 0;
+    margin: 20px 0;
+  }
+  
+  .ReviewPar {
+    top: 5%;
+  }
+  
+  .ReviewName {
+    top: 40%;
+  }
+  
+  .ReviewsImgCont {
+    width: 100px;
+    height: 100px;
+  }
+
+  .ReviewsImgBtn {
+    width: 50px;
+  }
 }
