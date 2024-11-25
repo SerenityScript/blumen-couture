@@ -19,14 +19,14 @@ export const Reviews = () => {
   };
 
   return (
-    <div className="MainCont">
-      <div className="BtnCont">
-        <button onClick={previousPerson}><img className="ImgBtn" src={left} alt="Previous" /></button>
+    <div className="ReviewsMainCont">
+      <div>
+        <button onClick={previousPerson}><img className="ReviewsImgBtn" src={left} alt="Previous" /></button>
       </div>
-      <div className="ContentCont">
-        <p className="ParCursive">{review}</p>
-        <p className="ParStandart">{name}</p>
-        <div className="ImgCont">
+      <div className="ReviewsContentCont">
+        <p className="ParCursive ReviewPar">{review}</p>
+        <p className="ParStandart ReviewName">{name}</p>
+        <div className="ReviewsImgCont">
           <img src={image} alt="Person" />
         </div>
         <div className="CommentCont">
@@ -41,8 +41,8 @@ export const Reviews = () => {
           ))}
         </div>
       </div>
-      <div className="BtnCont">
-        <button onClick={nextPerson}><img className="ImgBtn" src={right} alt="Next" /></button>
+      <div>
+        <button onClick={nextPerson}><img className="ReviewsImgBtn" src={right} alt="Next" /></button>
       </div>
       
       
