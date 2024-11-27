@@ -1,70 +1,90 @@
-# Getting Started with Create React App
+# Blumen Couture
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**Blumen Couture** ist eine Webanwendung, die sich auf florale Eventdekorationen und exklusive Blumenarrangements spezialisiert. Die Website bietet eine ansprechende Benutzeroberfläche mit beeindruckenden Animationen und einer Vielzahl von Funktionen wie einem Warenkorbsystem, Tabs zur Präsentation von Stilen und einer API-Integration.
 
-## Available Scripts
+## 🚀 Demo
 
-In the project directory, you can run:
+Erlebe Blumen Couture live: [https://blumen-couture-serenityscript.netlify.app/](https://blumen-couture-serenityscript.netlify.app/)
 
-### `npm start`
+[![Blumen Couture](src/demo.png)](https://blumen-couture-serenityscript.netlify.app/)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 📋 Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Luxuriöses Webdesign**: Visuell ansprechende Benutzeroberfläche mit **GSAP-Animationen**.
+- **Warenkorb-System**: Benutzer können Produkte hinzufügen, sehen die Anzahl der Artikel und können im Warenkorb navigieren.
+- **Interaktive Tabs**: Entdecken Sie verschiedene florale Dekorationsstile.
+- **API-Integration**:
+  - **Quotes API** für inspirierende Zitate.
+  - **Unsplash API** für dynamische Bilder.
+- **Responsive Design**: Passt sich nahtlos an alle Geräte an, von Desktops bis zu mobilen Bildschirmen.
 
-### `npm test`
+## 🛠️ Technologien
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **React** (Hooks: useState, useEffect, useRef)
+- **React Router** für Navigation zwischen Seiten.
+- **GSAP** für Animationen.
+- **CSS** mit Flexbox und Media Queries für responsives Design.
+- **Quotes API** für Zitate.
+- **Unsplash API** für Bilder.
+- **SweetAlert2** für Benachrichtigungen
 
-### `npm run build`
+## 📦 Installation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. **Repository klonen**:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+  - git clone git clone https://github.com/SerenityScript/blumen-couture.git
+  - cd blumen-couture
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Abhängigkeiten installieren:
 
-### `npm run eject`
+Stelle sicher, dass Node.js und npm installiert sind. Führe dann folgenden Befehl aus:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+npm install
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+App starten:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+npm start
+Die App wird normalerweise unter http://localhost:3000/ im Browser geöffnet.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## ⚙️ Verwendung
 
-## Learn More
+1. Entdecken Sie die Homepage:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Begrüßung und Einführung in die Eventdekorationen.
+- Countdown für Sonderaktionen.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+2. Navigieren Sie durch Tabs:
 
-### Code Splitting
+- Wählen Sie aus verschiedenen floralen Stilen.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+3. Warenkorb:
 
-### Analyzing the Bundle Size
+- Fügen Sie Artikel hinzu und überprüfen Sie den Warenkorb.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+4. Inspirierende Zitate:
 
-### Making a Progressive Web App
+- Lassen Sie sich von der Quotes API inspirieren.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+5. Dynamische Inhalte:
 
-### Advanced Configuration
+- Genießen Sie hochwertige Bilder von der Unsplash API.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## 📱 Responsives Design
+Die App passt sich an verschiedene Bildschirmgrößen an und unterstützt sowohl mobile Geräte als auch Desktop-Bildschirme. Es wurden Flexbox und Media Queries verwendet, um sicherzustellen, dass die App auf unterschiedlichen Geräten optimal aussieht.
 
-### Deployment
+## 📄 Lizenz
+Dieses Projekt ist unter der MIT License lizenziert. Siehe die LICENSE-Datei für weitere Details.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## 🔗 Nützliche Links
 
-### `npm run build` fails to minify
+* React: https://reactjs.org/
+* Create React App: https://create-react-app.dev/
+* SweetAlert2 Dokumentation: https://sweetalert2.github.io/#usage/
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## ✨ Mitwirkende
+
+Yulia Siebrandt - Projektentwicklung
+
+## 📧 Kontakt
+
+Wenn du Fragen oder Vorschläge hast, melde dich gerne bei mir über [siebrandt.dev@gmail.com](mailto:siebrandt.dev@gmail.com)
