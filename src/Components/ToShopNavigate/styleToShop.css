@@ -7,7 +7,7 @@
 }
 
 .ToShopNavigateImg {
-  width: 250px;
+  width: 230px;
   height: 250px;
   margin: 5px;
   transition: 1s;
@@ -15,6 +15,10 @@
 
 .ToShopNavigateImg:hover {
   filter: brightness(0.8);
+}
+
+.ToShopNavigateBtnImg {
+  width: 80px;
 }
 
 .ToShopNavigateBtn {
@@ -27,4 +31,16 @@
 .ToShopNavigateBtn:hover {
   gap: 15px;
   cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .ToShopNavigateImg {
+    width: 140px;
+    height: 140px;
+    margin: 5px;
+  }
+
+  .ToShopNavigateBtnImg {
+    width: 40px;
+  }
 }

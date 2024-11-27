@@ -1,7 +1,6 @@
 .IconsMainCont {
   width: 100%;
   display: flex;
-  flex-wrap: wrap;
   color: #7D7C7C;
 }
 
@@ -104,11 +103,6 @@
   align-items: center;
 }
 
-.AboutProductsImg {
-  width: 400px;
-  margin-bottom: 40px;
-}
-
 .btnHinzufügen {
   border: 1px solid #CDB37C;
   border-radius: 20px;
@@ -134,7 +128,7 @@
 
 .ShoppingCartCont {
   position: fixed;
-  bottom: 80px;
+  bottom: 60px;
   right: 10px;
   opacity: 0;
   transition: opacity 2s ease-in-out;
@@ -150,7 +144,7 @@
 }
 
 .ShoppingCartImg {
-  width: 60px;
+  width: 43px;
 }
 
 .ShoppingCartNumber {
@@ -179,11 +173,12 @@
 }
 
 .modal-content {
+  box-sizing: border-box;
   background: white;
   padding: 20px;
   border-radius: 8px;
-  width: 400px;
-  max-width: 80%;
+  max-width: 400px;
+  min-width: 400px;
   min-height: 80vh;
   max-height: 80vh;
   overflow-y: auto;
@@ -300,6 +295,7 @@
 .AboutProductsImg {
   width: 400px;
   margin-top: 30px;
+  margin-bottom: 40px;
   border-radius: 20px;
 }
 
@@ -338,4 +334,123 @@
 
 .btnAboutProducts:hover {
   background-color: rgba(205, 179, 124, 0.1);
+}
+
+@media (max-width: 768px) {
+  .PhoneSize {
+    font-size: 10px;
+  }
+  
+  .IconCont {
+    padding: 5px;
+    margin: 5px;
+  }
+  
+  .IconShop {
+    width: 25px;
+    height: 25px;
+  }
+  
+  .change {
+    padding: 5px;
+    margin: 10px;
+    width: 130px;
+  }
+  
+  .FirstShoppingCartBtn {
+    width: 70%;
+  }
+  
+  .FirstShoppingCartPar {
+    letter-spacing: 1px;
+    font-size: 16px;
+    margin: 5px;
+  }
+  
+  .product-card {
+    margin: 2%;
+    border: 1px solid #CDB37C;
+    width: 150px;
+  }
+  
+  .ProductImg {
+    width: 100%;
+    height: 100px;
+  }
+  
+  .btnHinzufügen {
+    padding: 6px;
+    margin: 6px;
+    
+  }
+  
+  .ProductName, .ProductPrice {
+    font-size: 12px;
+  }
+  
+  .ShoppingCartCont {
+    box-sizing: border-box;
+    bottom: 50px;
+    right: 2px;
+  }
+  
+  .ShoppingCartNumber {
+    top: -20px;
+    right: 3px;
+    font-size: 12px;
+    padding: 4px;
+  }
+  
+  .modal-content {
+    max-width: 90%;
+    min-width: 90%;
+  }
+  
+  .CartHeading {
+    font-size: 18px;
+  }
+  
+  .CartProductImg {
+    height: 110px;
+  }
+  
+  .PayIconsCont {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+  }
+  
+  .PayIcon {
+    width: 22px;
+  }
+  
+  .aboutProducts {
+    gap: 5px;
+  }
+  
+  .AboutProductsImg {
+    width: 250px;
+    height: 180px;
+    margin-top: 20px;
+    margin-bottom: 0;
+  }
+
+  .aboutProductsContentCont {
+    width: 80%;
+  }
+  
+  .headingAboutProducts {
+    font-size: 24px;
+    margin: 0;
+    letter-spacing: 1px;
+  }
+  
+  .parAboutProducts {
+    font-size: 14px;
+  }
+  
+  .btnAboutProducts {
+    padding: 5px 30px;
+    margin-bottom: 30px;
+  }
 }

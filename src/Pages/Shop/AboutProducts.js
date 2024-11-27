@@ -2,6 +2,7 @@ import { useParams, useNavigate } from "react-router-dom";
 import { shopList } from "./shopList";
 import Intro from "../../Components/Intro/Intro";
 import Slides from "../../Components/Slides/Slides";
+import './styleShop.css';
 
 function AboutProducts() {
   const navigate = useNavigate();
@@ -31,7 +32,7 @@ function AboutProducts() {
               <h3 className="headingAboutProducts">{elem.name}</h3>
               <p className="parAboutProducts">{elem.title}</p>
               <p className="parAboutProducts">€ {elem.price}</p>
-              <button className="btnAboutProducts" onClick={() => navigate(-1)}>
+              <button className="btnAboutProducts" onClick={() => {navigate(-1); window.scrollTo({ top: 0})}}>
                 Zurück
               </button>
             </div>

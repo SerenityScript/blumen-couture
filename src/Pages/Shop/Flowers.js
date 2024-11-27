@@ -65,7 +65,10 @@ function Flowers({ flowers }) {
           const { id, name, price, image } = item;
           return (
             <div className="product-card" key={id}>
-              <Link to={`/about/${item.title}`}>
+              <Link
+                to={`/about/${item.title}`}
+                onClick={() => window.scrollTo({top: 0})}
+              >
                 <img src={image} className="ProductImg" alt="Flowers" />
               </Link>
               <div className="product-info">
