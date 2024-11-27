@@ -1,3 +1,7 @@
+.TabsMainContainer {
+  margin-bottom: 50px;
+}
+
 .btn_tabs {
   font-family: "Mea Culpa", cursive;
   color: #7D7C7C;
@@ -26,4 +30,24 @@
   margin: 10px;
   padding: 15px;
   border: 1px solid #CDB37C;
+}
+
+@media (max-width: 768px) {
+  .TabsMainContainer {
+    margin-bottom: 20px;
+  }
+
+  .btn_tabs {
+  font-size: 17px;
+  letter-spacing: 0;
+  margin: 15px 5px;
+  padding: 5px 5px;
+}
+
+.TabImgCont {
+  width: 140px;
+  height: 140px;
+  margin: 5px;
+  padding: 5px;
+}
 }
