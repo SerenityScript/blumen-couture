@@ -1,6 +1,6 @@
 const TabInfoTwo = () => {
   return (
-    <div className="HeadingCont">
+    <div className="HeadingCont TabsMainContainer">
 
       <div className="TabsCont">
         <div className="TabImgCont">
