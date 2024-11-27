@@ -11,29 +11,29 @@ const ToEventsNavigate = () => {
       <div className="ToEventsNavigateCont">
         
         <div className="ToEventsNavigateContItem">
-          <p className="ParCursive">1. Planung</p>
-          <p className="ParStandart">
+          <p className="ToEventsNavigateHeader">1. Planung</p>
+          <p className="ParStandartJustify">
             In der Planungsphase legen wir das Konzept und Thema der Event-Dekoration fest, passend zum Anlass und den Kundenwünschen.
           </p>
         </div>
         
         <div className="ToEventsNavigateContItem">
-          <p className="ParCursive">2. Vorbereitungen</p>
-          <p className="ParStandart">
+          <p className="ToEventsNavigateHeader">2. Vorbereitungen</p>
+          <p className="ParStandartJustify">
             Wir bereiten die Blumendekorationen in unserem Shop vor, indem wir Sträuße, Gestecke oder Blumenwände arrangieren.
           </p>
         </div>
         
         <div className="ToEventsNavigateContItem">
-          <p className="ParCursive">3. Umsetzung vor Ort</p>
-          <p className="ParStandart">
+          <p className="ToEventsNavigateHeader">3. Umsetzung vor Ort</p>
+          <p className="ParStandartJustify">
             Alle Blumenarrangements werden an ihrem vorgesehenen Platz positioniert, von der Tischdekoration bis hin zum Eingangsbereich.
           </p>
         </div>
         
         <div className="ToEventsNavigateContItem">
-          <p className="ParCursive">4. Abbau</p>
-          <p className="ParStandart">
+          <p className="ToEventsNavigateHeader">4. Abbau</p>
+          <p className="ParStandartJustify">
             Nach dem Event entfernen wir die Blumen und Dekorationselemente sorgfältig, um die Location in ihren ursprünglichen Zustand zu versetzen.
           </p>
         </div>
@@ -43,7 +43,7 @@ const ToEventsNavigate = () => {
         className="ToPageNavigateBtn"
         onClick={() => {
           navigate("/eventDecoration");
-          window.scrollTo({ top: 0});
+          window.scrollTo({ top: 0})
         }}
         aria-label="Learn more about Event Decoration"
       >
