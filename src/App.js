@@ -21,7 +21,7 @@ function App() {
 
   // Loader Timeout
   useEffect(() => {
-    const timer = setTimeout(() => setStateLoader(false), 3000);
+    const timer = setTimeout(() => setStateLoader(false), 2000);
     return () => clearTimeout(timer);
   }, []);
 
