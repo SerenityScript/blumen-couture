@@ -26,7 +26,7 @@ const ToShopNavigate = () => {
           aria-label="Learn more about our Shop"
         >
           <p className="HeadingGold">Zum Shop</p>
-          <img className="ImgBtn" src={arrow} alt="Next" />
+          <img className="ToShopNavigateBtnImg" src={arrow} alt="Next" />
         </button>
       </div>
     </div>
