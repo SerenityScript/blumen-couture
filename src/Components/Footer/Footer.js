@@ -71,7 +71,7 @@ const Footer = () => {
           <img src={logo} alt="My Logo" className="logoFooter" />
           <p className="FooterParDown">&copy; 2000 Blumen Couture. Alle Rechte vorbehalten.</p>
           <p className="FooterParDown">Alle Bilder von Unsplash. Alle Icons von Freepik.</p>
-          <p className="FooterParDown">Entwickelt von <a href="https://github.com/SerenityScript" target="_blank">SerenityScript</a> für die Lernzwecke.</p>
+          <p className="FooterParDown">Entwickelt von <a href="https://github.com/SerenityScript" target="_blank" rel="noreferrer">SerenityScript</a> für die Lernzwecke.</p>
         </div>
       
     </footer>
