@@ -50,7 +50,7 @@ const Footer = () => {
       </div>
 
       <div className="footer-nav">
-        <h3>Menu</h3>
+        <h3>Menü</h3>
           {navLinks.map((link, index) => (
             <button
               key={index}
