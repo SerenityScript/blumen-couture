@@ -9,21 +9,14 @@ import Contact from './Pages/Contact';
 import logo from './logo.png';
 import Footer from './Components/Footer/Footer';
 import AboutProducts from './Pages/Shop/AboutProducts';
-import { LoaderPage } from './Components/Loader/LoaderPage';
 import { gsap } from 'gsap';
 
 function App() {
-  const [stateLoader, setStateLoader] = useState(true);
+
   const [menuOpen, setMenuOpen] = useState(false);
   const location = useLocation();
 
   const isActive = (path) => location.pathname === path;
-
-  // Loader Timeout
-  useEffect(() => {
-    const timer = setTimeout(() => setStateLoader(false), 2000);
-    return () => clearTimeout(timer);
-  }, []);
 
   // Menu Visibility Management with GSAP
   useEffect(() => {
@@ -73,7 +66,6 @@ function App() {
 
   return (
     <div className="App">
-      {stateLoader && <LoaderPage />}
       <nav className="navbar">
         <div className="nav-header">
           <img src={logo} className="logoImg" alt="My Logo" />
