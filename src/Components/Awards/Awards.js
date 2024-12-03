@@ -1,6 +1,6 @@
-import awardWhite from "./awardWhite.png";
-import awardBlack from "./awardBlack.png";
-import awardColors from "./awardColors.png";
+import awardWhite from "../../Assets/awardWhite.png";
+import awardBlack from "../../Assets/awardBlack.png";
+import awardColors from "../../Assets/awardColors.png";
 
 function Awards() {
   return (
