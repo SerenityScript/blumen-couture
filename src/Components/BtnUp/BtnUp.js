@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import './styleBtnUp.css';
-import arrowUp from './up-arrow.png';
+import arrowUp from '../../Assets/up-arrow.png';
 
 const BtnUp = () => {
   const [isVisible, setIsVisible] = useState(false);
