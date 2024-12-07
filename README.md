@@ -6,7 +6,7 @@
 
 Erlebe Blumen Couture live: [https://blumen-couture-serenityscript.netlify.app/](https://blumen-couture-serenityscript.netlify.app/)
 
-[![Blumen Couture](src/demo.png)](https://blumen-couture-serenityscript.netlify.app/)
+[![Blumen Couture](src/Assets/demo.png)](https://blumen-couture-serenityscript.netlify.app/)
 
 ## 📋 Features
 
