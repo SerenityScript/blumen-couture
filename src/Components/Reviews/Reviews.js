@@ -1,9 +1,9 @@
 import { useState } from "react";
 import { persons } from "./persons";
 import "./styleReviews.css";
-import left from "./left.png";
-import right from "./right.png";
-import coma from "./coma.png";
+import left from "../../Assets/left.png";
+import right from "../../Assets/right.png";
+import coma from "../../Assets/coma.png";
 
 export const Reviews = () => {
   const [person, setPerson] = useState(0);
