@@ -1,13 +1,12 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./Footer.css";
-import logo from "../../logo.png";
-import envelope from "./envelope.png";
-import insta from "./instagram.png";
+import logo from "../../Assets/logo.png";
+import envelope from "../../Assets/envelope.png";
+import insta from "../../Assets/instagram.png";
 
 const Footer = () => {
-  const navigate = useNavigate();
-
+  
   const navLinks = [
     { path: "/", label: "Startseite" },
     { path: "/shop", label: "Shop" },
@@ -21,50 +20,50 @@ const Footer = () => {
 
       <div className="Row">
 
-      <div>
-        <h3>Öffnungszeiten</h3>
-        <p>Mo: 8:00 - 19:00</p>
-        <p>Di: 8:00 - 19:00</p>
-        <p>Mi: 8:00 - 19:00</p>
-        <p>Do: 8:00 - 19:00</p>
-        <p>Fr: 8:00 - 19:00</p>
-      </div>
-
-      <div>
-        <h3>Kontakt</h3>
-        <p>Adresse: Loreane 37, Hamburg</p>
-        <p>Telephone: +49 35 56738</p>
-        <p>Fax: +49 35 56738</p>
-        <p>Email: blumen@couture.com</p>
         <div>
-          <img src={insta} className="FooterSocialIcon" alt="Social Media" />
-          <img src={envelope} className="FooterSocialIcon" alt="Email" />
+          <h3>Öffnungszeiten</h3>
+          <p>Mo: 8:00 - 19:00</p>
+          <p>Di: 8:00 - 19:00</p>
+          <p>Mi: 8:00 - 19:00</p>
+          <p>Do: 8:00 - 19:00</p>
+          <p>Fr: 8:00 - 19:00</p>
         </div>
-      </div>
 
-      <div>
-        <h3>Info</h3>
-        <p>VAT: 658345834734</p>
-        <p>Impressum</p>
-        <p>Datenschutz</p>
-      </div>
+        <div>
+          <h3>Kontakt</h3>
+          <p>Adresse: Loreane 37, Hamburg</p>
+          <p>Telephone: +49 35 56738</p>
+          <p>Fax: +49 35 56738</p>
+          <p>Email: blumen@couture.com</p>
+          <div>
+            <img src={insta} className="FooterSocialIcon" alt="Social Media" />
+            <img src={envelope} className="FooterSocialIcon" alt="Email" />
+          </div>
+        </div>
 
-      <div className="footer-nav">
-        <h3>Menü</h3>
+        <div>
+          <h3>Info</h3>
+          <p>VAT: 658345834734</p>
+          <p>Impressum</p>
+          <p>Datenschutz</p>
+        </div>
+
+        <div className="footer-nav">
+
+          <h3>Menü</h3>
+
           {navLinks.map((link, index) => (
-            <button
+            <Link
+              to={link.path}
               key={index}
               className="footer-nav-button"
-              onClick={() => {
-                navigate(link.path);
-                window.scrollTo({ top: 0});
-              }}
+              aria-label={`Gehe zu ${link.label}`}
             >
               {link.label}
-            </button>
+            </Link>
           ))}
-      </div>
-      
+
+        </div>
       </div>
         
         <div className="LogoDiv">
