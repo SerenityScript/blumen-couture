@@ -41,7 +41,7 @@
   background-color: #CDB37C;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 820px) {
   .SlidesContainer {
     height: 200px;
   }

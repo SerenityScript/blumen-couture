@@ -1,8 +1,7 @@
-import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import './styleToEvents.css';
 
 const ToEventsNavigate = () => {
-  const navigate = useNavigate();
   
   return (
     <div className="HeadingCont Background">
@@ -39,16 +38,13 @@ const ToEventsNavigate = () => {
         </div>
         
       </div>
-      <button
+      <Link
+        to="/eventDecoration"
         className="ToPageNavigateBtn"
-        onClick={() => {
-          navigate("/eventDecoration");
-          window.scrollTo({ top: 0})
-        }}
         aria-label="Learn more about Event Decoration"
       >
         Mehr über Event Dekoration erfahren...
-      </button>
+      </Link>
 
       </div>
   )

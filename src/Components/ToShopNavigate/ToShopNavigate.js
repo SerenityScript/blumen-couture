@@ -1,11 +1,11 @@
-import arrow from "./arrow.png";
-import { useNavigate } from "react-router-dom";
+import arrow from "../../Assets/arrow.png";
+import { Link } from "react-router-dom";
 import './styleToShop.css';
 
 const ToShopNavigate = () => {
-  const navigate = useNavigate();
   return (
     <div className="ToShopNavigateMainCont">
+
       <div className="ToShopNavigateImgCont">
         <div>
           <img src="https://images.unsplash.com/photo-1613279060119-2053dc14f8d2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDEyNXx8fGVufDB8fHx8fA%3D%3D" alt="Blumenstrauß" className="ToShopNavigateImg" />
@@ -16,18 +16,15 @@ const ToShopNavigate = () => {
           <img src="https://images.unsplash.com/photo-1591886960571-74d43a9d4166?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDk2fHx8ZW58MHx8fHx8" alt="Blumenstrauß" className="ToShopNavigateImg" />
         </div>
       </div>
+      
       <div>
-        <button
+        <Link to="/shop"
           className="ToShopNavigateBtn"
-          onClick={() => {
-            navigate("/shop");
-            window.scrollTo({ top: 0});
-          }}
           aria-label="Learn more about our Shop"
         >
           <p className="HeadingGold">Zum Shop</p>
-          <img className="ToShopNavigateBtnImg" src={arrow} alt="Next" />
-        </button>
+          <img className="ToShopNavigateBtnImg" src={arrow} alt="Pfeil, der zum Shop zeigt" />
+        </Link>
       </div>
     </div>
   )

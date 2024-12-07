@@ -22,6 +22,9 @@
 
 .TabsCont {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 80%;
 }
 
 .TabImgCont {
@@ -32,22 +35,62 @@
   border: 1px solid #CDB37C;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1280px) {
+  .TabsCont {
+    width: 100%;
+  }
+
+  .TabImgCont {
+    width: 280px;
+    height: 280px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .TabImgCont {
+    width: 250px;
+    height: 250px;
+  }
+}
+
+@media (max-width: 820px) {
+  .btn_tabs {
+    margin: 15px 3px;
+    padding: 5px 5px;
+  }
+
+  .TabImgCont {
+    width: 210px;
+    height: 210px;
+  }
+}
+
+@media (max-width: 540px) {
   .TabsMainContainer {
     margin-bottom: 20px;
   }
 
   .btn_tabs {
-  font-size: 17px;
-  letter-spacing: 0;
-  margin: 15px 5px;
-  padding: 5px 5px;
+    font-size: 18px;
+    letter-spacing: 0;
+  }
+
+  .TabImgCont {
+    width: 155px;
+    height: 155px;
+    margin: 5px;
+    padding: 5px;
+  }
 }
 
-.TabImgCont {
-  width: 140px;
-  height: 140px;
-  margin: 5px;
-  padding: 5px;
-}
+@media (max-width: 350px) {
+  .btn_tabs {
+    font-size: 16px;
+    letter-spacing: 0;
+  }
+
+  .TabImgCont {
+    width: 140px;
+    height: 140px;
+  }
 }

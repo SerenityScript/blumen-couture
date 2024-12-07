@@ -5,9 +5,9 @@ import Intro from "../Components/Intro/Intro";
 import Slides from "../Components/Slides/Slides";
 import { listEvents } from "./listEvents";
 import Tabs from "../Components/Tabs/Tabs";
-import TabInfoOne from "../Components/Tabs/TabInfoOne";
-import TabInfoTwo from "../Components/Tabs/TabInfoTwo";
-import TabInfoThree from "../Components/Tabs/TabInfoThree";
+import TabInfoOne from "../Components/Tabs/ClassicTab";
+import TabInfoTwo from "../Components/Tabs/BohoTab";
+import TabInfoThree from "../Components/Tabs/RomanticTab";
 import { useNavigate } from "react-router-dom";
 import BtnUp from "../Components/BtnUp/BtnUp";
 

@@ -10,7 +10,7 @@ import { Reviews } from "../Components/Reviews/Reviews";
 import Slides from "../Components/Slides/Slides";
 import ToEventsNavigate from "../Components/ToEventsNavigate/ToEventsNavigate";
 import ToShopNavigate from "../Components/ToShopNavigate/ToShopNavigate";
-import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -52,8 +52,6 @@ const Home = () => {
     "https://images.unsplash.com/photo-1640060902291-570e6cdb00e0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDc0fHx8ZW58MHx8fHx8"
   ];
 
-  const navigate = useNavigate();
-
   const blackFridayDate = "2025-02-14T00:00:00";
 
   return (
@@ -87,16 +85,13 @@ const Home = () => {
               finden Sie florale Kunstwerke, die Ihre Momente zum Strahlen bringen.
             </p>
           </div>
-          <button
+          <Link
+            to="/about"
             className="ToPageNavigateBtn"
-            onClick={() => {
-              navigate("/about");
-              window.scrollTo({ top: 0 });
-            }}
             aria-label="Learn more about Blumen Couture"
           >
             Mehr über Blumen Couture erfahren...
-          </button>
+          </Link>
         </section>
 
         <section ref={(el) => setRef(el, 1)} className="HeadingCont">
@@ -115,16 +110,13 @@ const Home = () => {
           <div className="KontactUsContainer">
             <h2 className="MainHeading">Möchten Sie Ihren Traum wahr werden lassen?</h2>
             <p className="Par">Kontaktieren Sie uns und wir erfüllen es</p>
-            <button
+            <Link
+              to="/contact"
               className="KontaktUsBtn"
-              onClick={() => {
-                navigate("/contact");
-                window.scrollTo({ top: 0 });
-              }}
               aria-label="Learn more about how to contact us"
             >
               KONTAKT
-            </button>
+            </Link>
           </div>
         </section>
 

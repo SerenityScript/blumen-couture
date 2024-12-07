@@ -26,6 +26,7 @@
   align-items: center;
   gap: 5px;
   transition: .5s;
+  text-decoration: none;
 }
 
 .ToShopNavigateBtn:hover {
@@ -33,7 +34,7 @@
   cursor: pointer;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 500px) {
   .ToShopNavigateImg {
     width: 140px;
     height: 140px;
