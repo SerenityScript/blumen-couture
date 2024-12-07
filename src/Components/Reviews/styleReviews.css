@@ -80,7 +80,7 @@ button {
   background-color: #CDB37C;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 500px) {
   .ReviewsMainCont {
     width: 100%;
     min-height: 350px;
