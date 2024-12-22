@@ -24,10 +24,9 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  
 }
 
-.change {
+.categoryButton {
   background-color: #CDB37C;
   color: #ffffff;
   padding: 10px;
@@ -40,7 +39,11 @@
   transition: 0.4s;
 }
 
-.change:hover {
+.categoryButton:hover {
+  background-color: #b59763;
+}
+
+.categoryButtonSelected {
   background-color: #b59763;
 }
 

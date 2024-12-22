@@ -1,6 +1,3 @@
-import { useEffect, useRef } from "react";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Awards from "../Components/Awards/Awards";
 import BtnUp from "../Components/BtnUp/BtnUp";
 import Countdown from "../Components/Countdown/Countdown";
@@ -11,40 +8,10 @@ import Slides from "../Components/Slides/Slides";
 import ToEventsNavigate from "../Components/ToEventsNavigate/ToEventsNavigate";
 import ToShopNavigate from "../Components/ToShopNavigate/ToShopNavigate";
 import { Link } from "react-router-dom";
-
-gsap.registerPlugin(ScrollTrigger);
+import useGsapScrollTrigger from "../Components/useGsapScrollTrigger";
 
 const Home = () => {
-  const sectionsRef = useRef([]); // Array von Refs für alle Sektionen
-
-  useEffect(() => {
-    sectionsRef.current.forEach((section) => {
-      if (section) {
-        gsap.fromTo(
-          section,
-          { opacity: 0, y: 70 },
-          {
-            opacity: 1,
-            y: 0,
-            duration: 1.5,
-            ease: "power3.out",
-            scrollTrigger: {
-              trigger: section,
-              start: "top 80%", // Start der Animation (80% Sichtbarkeit)
-              end: "top 20%", // Ende der Animation (20% Sichtbarkeit)
-              scrub: true, // Für flüssiges Vor- und Rückwärts-Scrolling
-              toggleActions: "play reverse play reverse", // Animation in beide Richtungen
-            },
-          }
-        );
-      }
-    });
-  }, []);
-
-  // Funktion zur Zuordnung von Refs
-  const setRef = (el, index) => {
-    sectionsRef.current[index] = el;
-  };
+  const { setRef } = useGsapScrollTrigger();
 
   const images = [
     "https://images.unsplash.com/photo-1625076019815-b1a5f7e5ef1e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDYxfHx8ZW58MHx8fHx8",
@@ -67,7 +34,6 @@ const Home = () => {
       </header>
 
       <main className="HomeMainCont">
-        {/* Jede Sektion bekommt eine Referenz */}
         <section ref={(el) => setRef(el, 0)} className="HeadingCont">
           <h3 className="HeadingGold">Willkommen bei Blumen Couture,</h3>
           <p className="ParCursive">
