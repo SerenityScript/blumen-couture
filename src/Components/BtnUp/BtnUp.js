@@ -22,14 +22,10 @@ const BtnUp = () => {
   }, []);
 
   return (
-
-
     <div>
-      
       {isVisible && ( <button onClick={() => window.scrollTo({ top: 0})} className={`BtnUp ${isVisible ? "visible" : ""}`}>
         <img src={arrowUp} className='BtnUpIcon' alt='Arrow up' />
       </button>)}
-
     </div>
   )
 }
