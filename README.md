@@ -22,6 +22,7 @@ Erlebe Blumen Couture live: [https://blumen-couture-serenityscript.netlify.app/]
 
 - **React** (Hooks: useState, useEffect, useRef)
 - **React Router** für Navigation zwischen Seiten.
+- **Redux Toolkit** für Warenkorb System.
 - **GSAP** für Animationen.
 - **CSS** mit Flexbox und Media Queries für responsives Design.
 - **Quotes API** für Zitate.
