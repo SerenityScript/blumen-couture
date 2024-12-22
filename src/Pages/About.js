@@ -1,6 +1,4 @@
-import { useEffect, useRef, useState } from "react";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useEffect, useState } from "react";
 import Awards from "../Components/Awards/Awards";
 import Intro from "../Components/Intro/Intro";
 import { Reviews } from "../Components/Reviews/Reviews";
@@ -10,10 +8,12 @@ import random from "../Assets/dice.png";
 import { Accordion } from "../Components/Accordion/Accordion";
 import Instagram from "../Components/Instagram/Instagram";
 import BtnUp from "../Components/BtnUp/BtnUp";
+import useGsapScrollTrigger from "../Components/useGsapScrollTrigger";
 
-gsap.registerPlugin(ScrollTrigger);
 
 const About = () => {
+  const { setRef } = useGsapScrollTrigger();
+
   const images = [
     "https://images.unsplash.com/photo-1561334251-b306baba437a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDkyfHx8ZW58MHx8fHx8",
     "https://images.unsplash.com/photo-1631174956992-2801f6f8f4d8?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDIwMHx8fGVufDB8fHx8fA%3D%3D",
@@ -21,8 +21,7 @@ const About = () => {
   ];
 
   const [quotes, setQuotes] = useState("");
-  const sectionsRef = useRef([]); // Referenzen für alle sections
-
+  
   useEffect(() => {
     fetchQuotes();
   }, []);
@@ -32,31 +31,6 @@ const About = () => {
     const data = await response.json();
     setQuotes(data);
   };
-
-  useEffect(() => {
-    // GSAP-Animationen für alle Sections
-    sectionsRef.current.forEach((section) => {
-      if (section) {
-        gsap.fromTo(
-          section,
-          { opacity: 0, y: 50 },
-          {
-            opacity: 1,
-            y: 0,
-            duration: 1.5,
-            ease: "power3.out",
-            scrollTrigger: {
-              trigger: section,
-              start: "top 80%",
-              end: "top 20%",
-              scrub: true,
-              toggleActions: "play reverse play reverse",
-            },
-          }
-        );
-      }
-    });
-  }, []);
 
   return (
     <div>
@@ -73,7 +47,7 @@ const About = () => {
       <main className="HomeMainCont">
         <section
           className="HeadingCont"
-          ref={(el) => (sectionsRef.current[0] = el)} // Section 1 Referenz
+          ref={(el) => setRef(el, 0)} // Section 1 Referenz
         >
           <h3 className="HeadingGold">Über uns</h3>
           <p className="ParCursive">"{quotes.quote}"</p>
@@ -85,7 +59,7 @@ const About = () => {
 
         <section
           className="HeadingCont"
-          ref={(el) => (sectionsRef.current[1] = el)} // Section 2 Referenz
+          ref={(el) => setRef(el, 1)} // Section 2 Referenz
         >
           <img
             src="https://images.unsplash.com/photo-1687831958087-30a2130c968f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDcwfHx8ZW58MHx8fHx8"
@@ -104,7 +78,7 @@ const About = () => {
 
         <section
           className="HeadingCont"
-          ref={(el) => (sectionsRef.current[2] = el)} // Section 3 Referenz
+          ref={(el) => setRef(el, 2)} // Section 3 Referenz
         >
           <video autoPlay muted loop>
             <source src={video} type="video/mp4" />
@@ -113,7 +87,7 @@ const About = () => {
 
         <section
           className="HeadingCont"
-          ref={(el) => (sectionsRef.current[3] = el)} // Section 4 Referenz
+          ref={(el) => setRef(el, 3)} // Section 4 Referenz
         >
           <p className="ParStandart ParLong">
             Blumen Couture bietet eine schnelle und zuverlässige Lieferung von
@@ -123,7 +97,7 @@ const About = () => {
 
         <section
           className="HeadingCont"
-          ref={(el) => (sectionsRef.current[4] = el)} // Section 5 Referenz
+          ref={(el) => setRef(el, 4)} // Section 5 Referenz
         >
           <h3 className="HeadingGold">
             Wir bieten eine exklusive Auswahl an luxuriösen Blumendiensten:
@@ -135,21 +109,21 @@ const About = () => {
 
         <section
           className="HeadingCont"
-          ref={(el) => (sectionsRef.current[5] = el)} // Section 6 Referenz
+          ref={(el) => setRef(el, 5)} // Section 6 Referenz
         >
           <Instagram />
         </section>
 
         <section
           className="HeadingCont"
-          ref={(el) => (sectionsRef.current[6] = el)} // Section 7 Referenz
+          ref={(el) => setRef(el, 6)} // Section 7 Referenz
         >
           <Reviews />
         </section>
 
         <section
           className="HeadingCont"
-          ref={(el) => (sectionsRef.current[7] = el)} // Section 8 Referenz
+          ref={(el) => setRef(el, 7)} // Section 8 Referenz
         >
           <Awards />
         </section>
