@@ -4,17 +4,9 @@ import "./Footer.css";
 import logo from "../../Assets/logo.png";
 import envelope from "../../Assets/envelope.png";
 import insta from "../../Assets/instagram.png";
+import { navLinks } from "../../data/data";
 
 const Footer = () => {
-  
-  const navLinks = [
-    { path: "/", label: "Startseite" },
-    { path: "/shop", label: "Shop" },
-    { path: "/eventDecoration", label: "Event Dekoration" },
-    { path: "/about", label: "Über uns" },
-    { path: "/contact", label: "Kontakt" },
-  ];
-
   return (
     <footer className="footer">
 
