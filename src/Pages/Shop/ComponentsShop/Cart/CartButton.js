@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import shoppingCart from "../../AssetsShop/shoppingCart.png";
 import { useSelector } from "react-redux";
-import { getTotalAmount } from "../../redux/cartSlice";
+import { getTotalAmount } from "../../../../redux/cartSlice";
 
 
 const CartButton = ({setIsCartOpen}) => {
