@@ -1,6 +1,6 @@
 import { useDispatch } from "react-redux";
-import dataFlowers from "../../data/dataFlowers";
-import { removeItemFromCart } from "../../redux/cartSlice";
+import { dataFlowers } from "../../../../data/data";
+import { removeItemFromCart } from "../../../../redux/cartSlice";
 import garbage from "../../AssetsShop/garbage.png"; 
 import ChangeQuantity from "./ChangeQuantity";
 
