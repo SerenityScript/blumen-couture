@@ -1,5 +1,5 @@
 import { useDispatch, useSelector } from "react-redux";
-import { filterCategory, getSelectedCategory } from "../../redux/flowersSlice";
+import { filterCategory, getSelectedCategory } from "../../../../redux/flowersSlice";
 
 const Filter = ({ category }) => {
   const dispatch = useDispatch();
