@@ -1,7 +1,7 @@
 import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
 import ChangeQuantity from "../Cart/ChangeQuantity";
-import { addItemToCart } from "../../redux/cartSlice";
+import { addItemToCart } from "../../../../redux/cartSlice";
 import { useState } from "react";
 
 const Flower = ({ flower }) => {

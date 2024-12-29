@@ -1,7 +1,7 @@
 import Flower from "./Flower";
-import dataFlowers from '../../data/dataFlowers';
+import { dataFlowers } from '../../../../data/data';
 import { useSelector } from "react-redux";
-import { getSelectedCategory } from "../../redux/flowersSlice";
+import { getSelectedCategory } from "../../../../redux/flowersSlice";
 
 const Flowers = () => {
   const selectedCategory = useSelector(getSelectedCategory);
