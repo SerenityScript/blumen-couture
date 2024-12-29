@@ -3,7 +3,7 @@ import Cart from "./Cart";
 import ModalCart from "./ModalCart";
 import CartButton from "./CartButton";
 import { useSelector } from "react-redux";
-import { getTotalAmount } from "../../redux/cartSlice";
+import { getTotalAmount } from "../../../../redux/cartSlice";
 
 const GoToCart = () => {
   const [isCartOpen, setIsCartOpen] = useState(false);
