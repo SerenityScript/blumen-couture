@@ -1,5 +1,5 @@
 import { useParams, useNavigate } from "react-router-dom";
-import dataFlowers from "../../data/dataFlowers";
+import { dataFlowers } from "../../../../data/data";
 import Intro from "../../../../Components/Intro/Intro";
 import Slides from "../../../../Components/Slides/Slides";
 
