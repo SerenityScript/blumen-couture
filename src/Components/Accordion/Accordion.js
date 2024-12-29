@@ -1,11 +1,11 @@
 import { AccordionItem } from "./AccordionItem";
-import { list } from "./list";
+import { listAccordion } from "../../data/data";
 import "./style.css";
 
 export const Accordion = () => {
   return (
     <div>
-      {list.map((item, index) =>
+      {listAccordion.map((item, index) =>
         <AccordionItem key={index} title={item.title} content={item.content} image={item.image} />
       )}
     </div>
